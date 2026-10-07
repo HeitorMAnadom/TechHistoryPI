@@ -17,16 +17,18 @@ h4,
 h5,
 h6 {
   font-family: "Space Grotesk", sans-serif;
+  color: white;
 }
 p {
-  font-family: "", sans-serif;
+  font-family: "Heebo", sans-serif;
+  color: white;
 }
 
 /* MEDIA QUERY - DESKTOP */
 
 @media screen and (min-width: 600px) {
   main {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(66, 66, 66);
     margin: 0;
     padding: 0;
     display: flow-root;
@@ -242,7 +244,7 @@ p {
   }
 
   .curiosidades h2 span {
-    color: black;
+    color: rgb(5, 32, 63);
   }
 
   .curiosidades ul {
@@ -297,7 +299,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: left;
-    background-color: #2b7f99;
+    background-color: #093958;
   }
 
   .moderno div {

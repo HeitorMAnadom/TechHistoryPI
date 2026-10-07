@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz - v1.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TELA INICIAL-->
+
+    <div id="tela-inicial" class="tela-inicial">
+
+        <p>Seja bem-vindo ao..</p>
+
+        <h1>Quiz Multiconhecimentos!</h1>
+
+        <h2 class="regras">Regras do jogo</h2>
+
+        <p>São <span>Doze perguntas</span></p>
+
+        <ul>
+            <li>
+                <p>5 Perguntas <span>Fáceis</span></p>
+            </li>
+            <li>
+                <p>4 perguntas <span>Médias</span></p>
+            </li>
+            <li>
+                <p>3 Perguntas <span>Difíceis</span></p>
+            </li>
+        </ul>
+
+        <p>Quatro Alternativas. Uma Correta.</p>
+
+        <p>Vinte segundos para responder cada pergunta</p>
+
+        <button onclick="inicQuiz()">Começar a jogar</button> <!-- Contém uma variável inicQuiz para ser executada pelo JS -->
+
+        <h2 class="sorte">Boa Sorte!</h2>
+
+    </div>
+
+    <!-- TELA DO JOGO (Inicia ocultada) -->
+
+    <div id="tela-jogo" class="tela-jogo" style="display: none;"> <!-- Esse style funciona parecido com o display do CSS, você seleciona que forma os elemntos vão ser organizados -->
+
+        <!-- Indicadores para o jogador -->
+
+        <h4 id="dific">Dificuldade : Fácil</h4>
+
+        <h3 id="tempo">Tempo : 20s</h3>
+
+        <!-- Pergunta e Botões -->
+
+        <h2 id="pergu" class="pergu"> Carregando...</h2>
+
+        <div id="opcs" class="opcs">
+
+            <button class="botao" onclick="verificar(0)"></button> <!-- Essa variavél serve pra fazer a verificacao no JS, sendo que cada opção nós associamos a um número a partir de 0 -->
+            <button class="botao" onclick="verificar(1)"></button>
+            <button class="botao" onclick="verificar(2)"></button>
+            <button class="botao" onclick="verificar(3)"></button>
+
+        </div>
+
+        <h3 id="resp" class="resp"></h3>
+
+        <button id="avanc" class="avanc" onclick="proximaPergunta()">Avançar</button> <!-- Essa parte só aparece quando alguma opcao é selecionada -->
+
+    </div> 
+
+    <!-- TELA FINAL (Só aparece depois que todas as perguntas forem respondidas) -->
+
+    <div id="tela-final" class="tela-final" style="display: none;">
+        
+        <h2> Fim de Jogo!</h2>
+
+        <h3 id="ponts-final"></h3>
+
+        <button onclick="location.reload()">Deseja jogar novamente?</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
