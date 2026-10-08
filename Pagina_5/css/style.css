@@ -24,6 +24,10 @@ p {
   color: white;
 }
 
+body {
+  background-color: rgb(66, 66, 66);
+}
+
 /* MEDIA QUERY - DESKTOP */
 
 @media screen and (min-width: 600px) {
@@ -33,6 +37,8 @@ p {
     padding: 0;
     display: flow-root;
   }
+
+  /* === HEADER === */
 
   header {
     display: flex;
@@ -360,7 +366,7 @@ p {
     display: flex;
     gap: 29vw;
     justify-content: left;
-    margin-top: 1.5vw;
+    margin-top: 2vw;
     margin-left: 7.51vw;
     padding-bottom: 1vw;
   }
@@ -374,11 +380,11 @@ p {
     font-size: 0.5rem;
   }
   footer ul li a {
-    color: rgb(46, 44, 44);
+    color: white;
     font-size: 0.5rem;
   }
   footer div p {
-    color: rgb(46, 44, 44);
+    color: white;
   }
   footer p span {
     color: rgb(110, 30, 134);
