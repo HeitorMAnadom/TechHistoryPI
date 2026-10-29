@@ -31,6 +31,16 @@ p {
   font-family: "Heebo", sans-serif;
 }
 
+/*--------------------------------------Mobile----------------------------------------------*/
+
+header {
+  text-align: center;
+  padding: 15px 15px;
+}
+header a img {
+  
+}
+
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 600px) {
 
