@@ -31,7 +31,52 @@ p {
   font-family: "Heebo", sans-serif;
 }
 
+html {
+  padding: 1vw;
+  background-image: linear-gradient(140deg, #1f1d3a, #000000, #1f1d3a);
+}
+
+section.principal div.mona {
+  text-align: center;
+  color: aliceblue;
+}
+
+section.principal div.mona h1 {
+  font-size: 1.7rem;
+}
+
+section.principal div.mona h1 span {
+  font-size: 1.9rem;
+}
+
+section.principal div.mona img {
+  height: 40vw;
+  margin: 3vw 2vw;
+}
+
+section.principal div.mona h3 {
+  font-size: 1.4rem;
+  padding: 1vw;
+}
+
+section.principal div.mona p {
+  font-size: 1rem;
+  padding: 1vw;
+}
+
+section.principal div.mona button a {
+  padding: 2vw;
+  background-image: linear-gradient(90deg, rgb(106, 221, 39), rgb(76, 160, 28));
+  border-radius: 10px;
+}
+
+section.principal div.mona button:hover a {
+  padding: 2vw;
+  background-image: linear-gradient(90deg, rgb(106, 221, 39), rgb(76, 160, 28));
+  border-radius: 10px;
+  
+}
+
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 600px) {
-
 }
