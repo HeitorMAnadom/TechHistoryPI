@@ -16,41 +16,37 @@
 
   <body>
     <header>
-      <h1>
-        <a href="index.html"
-          ><img src="src/logo2.png" alt="Logo: Tech&History"
-        /></a>
-      </h1>
-      <nav>
+      <div class="menuzao">
+      <button class="menu" onclick="toggleMenu()">&#9776;</button>
+      <nav class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
         <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-          <li>
-            <a href="../Pagina_1/sobre.html">Sobre</a>
-          </li>
-          <li>
-            <a href="../Pagina_3/circulacao.html">Circulação</a>
-          </li>
-          <li>
-            <a href="../Pagina_4/impactos.html">Impactos</a>
-          </li>
-          <li>
-            <a href="../Pagina_5/Pagina_5/evolucao.html">Curiosidades</a>
-          </li>
-          <li>
-            <a href="../Pagina_6/antiguidades.html">Antiguidades</a>
-          </li>
-          <li>
-            <p id="botao"><a href="../PaginaQuiz/quiz.html">Jogue Quiz!</a></p>
-          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+          <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+          <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+          <li><a href="../Pagina_5/Pagina_5/evolucao.html">Curiosidades</a></li>
+          <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
         </ul>
       </nav>
+      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+      <script>
+        function toggleMenu() {
+          const sidebar = document.getElementById("sidebar");
+          const overlay = document.getElementById("overlay");
+          sidebar.classList.toggle("open");
+          overlay.classList.toggle("open");
+        }
+      </script>
+      </div>
+      <img src="src/logo2.png" alt="logo2">
     </header>
+
     <main>
+      
       <section class="banner">
         <h1>TECNOLOGIAS DA <br /><span>ANTIGUIDADE</span></h1>
-        <img src="src/aqueduto.jpg" alt="void" />
+        <!--<img src="src/aqueduto.jpg" alt="void" />-->
       </section>
       <section class="motifs">
         <h2>Por quê na antiguidade se buscava <span>tecnologia</span>?</h2>
@@ -62,7 +58,7 @@
           antigo inovava para garantir comida, território e ordem socials
         </p>
         <ol>
-          <li class="survive">
+          <li>
             <h3>1. Sobrevivência e Alimentação</h3>
             <p>
               O crescimento das cidades exigia mais alimentos. Civilizações como
@@ -71,7 +67,7 @@
               aumentavam a produtividade no campo.
             </p>
           </li>
-          <li class="war">
+          <li>
             <h3>2. Guerra e Expansão Territorial</h3>
             <p>
               Os conflitos constantes exigiam evolução militar. A transição das
@@ -81,7 +77,7 @@
               gigantes.
             </p>
           </li>
-          <li class="religion">
+          <li>
             <h3>3. Centralização do Poder e Religião</h3>
             <p>
               Gerenciar impérios populosos exigia ferramentas de controle. A
@@ -90,7 +86,7 @@
               aquedutos romanos) garantiam a ordem social.
             </p>
           </li>
-          <li class="connectivity">
+          <li>
             <h3>4. Comércio e Conectividade</h3>
             <p>
               Para buscar recursos escassos, como metais e especiarias, os povos
@@ -103,8 +99,7 @@
       </section>
       <section class="access">
         <h2>
-          Quem tinham <span>acesso</span> a essas
-          <span class="red">tecnologias</span>?
+          Quem tinham <span>acesso</span> a essas tecnologias?
         </h2>
         <p>
           Na antiguidade, o acesso às tecnologias mais avançadas era restrito
