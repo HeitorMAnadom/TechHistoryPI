@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <h1><img src="source/logo.png" alt="" /></h1>
+      <!-- <h1><img src="source/logo.png" alt="" /></h1>
       <div>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -27,7 +27,31 @@
           <li><a href="Pagina_6/antiguidades.html">Antiguidades</a></li>
         </ul>
         <a class="button" href="../PaginaQuiz/quiz.html">Jogue Quiz!</a>
+      </div> -->
+      <div class="menuzao">
+        <button class="menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="sidebar" id="sidebar">
+          <button class="close-btn" onclick="toggleMenu()">&times;</button>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pagina_1/sobre.html">Sobre</a></li>
+            <li><a href="Pagina_3/circulacao.html">Circulação</a></li>
+            <li><a href="Pagina_4/impactos.html">Impactos</a></li>
+            <li><a href="Pagina_5/Pagina_5/evolucao.html">Curiosidades</a></li>
+            <li><a href="Pagina_6/antiguidades.html">Antiguidades</a></li>
+          </ul>
+        </nav>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+        <script>
+          function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            const overlay = document.getElementById("overlay");
+            sidebar.classList.toggle("open");
+            overlay.classList.toggle("open");
+          }
+        </script>
       </div>
+      <img src="Pagina_1/source/logo_cortada.png" alt="" />
     </header>
     <main>
       <section class="principal">
