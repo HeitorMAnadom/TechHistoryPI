@@ -179,10 +179,41 @@ header img {
 
 .access h2 {
   font-size: 1.5rem;
+  padding-bottom: 15px;
 }
 
 .access h2 span {
   color: aquamarine;
+}
+
+.access p {
+  padding-bottom: 10px;
+}
+
+.access ul li {
+  padding: 7px 0;
+}
+
+.access ul li span.king {
+  color: rgb(255, 127, 249);
+}
+
+.access span.priest {
+  color: aquamarine;
+}
+
+.access span.military {
+  color: rgb(255, 127, 214);
+}
+
+.access span.scientist {
+  color: rgb(255, 221, 127);
+}
+
+/*---------------------MAINTECH----------------------------*/
+.mainTech h2 {
+  font-size: 1.5rem;
+  padding-bottom: 15px;
 }
 
 /* MEDIA QUERY -------------------------------------------------------------------- DESKTOP */
