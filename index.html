@@ -16,8 +16,8 @@
   </head>
   <body>
     <header>
-      <!-- <h1><img src="source/logo.png" alt="" /></h1>
-      <div>
+      <div class="desktop">
+        <img src="Pagina_1/source/logo_cortada.png" alt="" />
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="Pagina_1/sobre.html">Sobre</a></li>
@@ -26,14 +26,15 @@
           <li><a href="Pagina_5/Pagina_5/evolucao.html">Curiosidades</a></li>
           <li><a href="Pagina_6/antiguidades.html">Antiguidades</a></li>
         </ul>
-        <a class="button" href="../PaginaQuiz/quiz.html">Jogue Quiz!</a>
-      </div> -->
+        <button><a href="Quiz/index.html">Jogue Quiz!</a></button>
+      </div>
       <div class="menuzao">
         <button class="menu" onclick="toggleMenu()">&#9776;</button>
         <nav class="sidebar" id="sidebar">
           <button class="close-btn" onclick="toggleMenu()">&times;</button>
           <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="Pagina_1/sobre.html">Sobre</a></li>
             <li><a href="Pagina_2/evolucao.html">Evolução</a></li>
             <li><a href="Pagina_3/circulacao.html">Circulação</a></li>
             <li><a href="Pagina_4/impactos.html">Impactos</a></li>
@@ -51,7 +52,7 @@
           }
         </script>
       </div>
-      <img src="Pagina_1/source/logo_cortada.png" alt="" />
+      <img class="mobile" src="Pagina_1/source/logo_cortada.png" alt="" />
     </header>
     <main>
       <section class="principal">
@@ -62,15 +63,22 @@
           <h3>O Que Nosso Site Propõe?</h3>
           <p>
             Nosso site tem como objetivo apresentar, de forma simples e
-            organizada, <span>como acontece o comércio e a circulação de tecnologia no
-            mundo.</span> Aqui você encontrará informações sobre a importância da
-            <span>tecnologia</span> na sociedade, seus impactos e como ela conecta <span>pessoas,
-            empresas e países.</span>
+            organizada,
+            <span
+              >como acontece o comércio e a circulação de tecnologia no
+              mundo.</span
+            >
+            Aqui você encontrará informações sobre a importância da
+            <span>tecnologia</span> na sociedade, seus impactos e como ela
+            conecta <span>pessoas, empresas e países.</span>
           </p>
-          <p>
-            <button><a href="">Sobre nós</a></button>
-          </p>
+          <button><a href="">Sobre nós</a></button>
         </div>
+      </section>
+      <section class="sobre">
+        <h3>
+          Veja mais sobre o tema >>> <a href="Pagina_1/sobre.html">Sobre</a>
+        </h3>
       </section>
     </main>
     <footer id="mapa">
