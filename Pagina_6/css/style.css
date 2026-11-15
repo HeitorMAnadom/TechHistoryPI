@@ -216,6 +216,17 @@ header img {
   padding-bottom: 15px;
 }
 
+.mainTech p span {
+  color: aquamarine;
+}
+
+.mainTech ol {
+  padding: 25px 0 25px 0;
+}
+
+.mainTech ol li {
+  padding: 5px;
+}
 /* MEDIA QUERY -------------------------------------------------------------------- DESKTOP */
 
 @media screen and (min-width: 600px) {
