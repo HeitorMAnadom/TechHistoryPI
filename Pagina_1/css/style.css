@@ -59,8 +59,10 @@ section.principal div.mona h1 {
 }
 
 section.principal div.mona h1 span {
-  font-size: 1.9rem;
-  color: aquamarine;
+    background-color: rgb(14, 7, 109);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
 }
 
 section.principal div.mona img {
@@ -79,16 +81,16 @@ section.principal div.mona p {
 }
 
 section.principal div.mona p span {
-  color: aquamarine;
+    background-color: rgb(14, 7, 109);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
 }
 
 section.principal div.mona button a {
-  padding: 2vw;
-  background-image: linear-gradient(
-    90deg,
-    rgb(116, 231, 193),
-    rgb(91, 199, 154)
-  );
+  background-color: rgb(41, 38, 85);
+  padding: 3vw;
+  display: inline-block;
   border-radius: 10px;
 }
 
@@ -184,6 +186,8 @@ header img {
   display: block;
 }
 
+/* Header */
+
 div.desktop {
   display: none;
 }
@@ -194,9 +198,10 @@ div.desktop {
 }
 
 .sobre h3 a {
-  color: aquamarine;
-  transition: 1s ease-in-out;
-  position: static;
+  background-color: rgb(41, 38, 85);
+  padding: 3vw;
+  display: inline-block;
+  border-radius: 10px;
 }
 
 .sobre h3 a:hover {

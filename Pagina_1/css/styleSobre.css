@@ -1,0 +1,305 @@
+/* === IMPORTAÇÃO DE FONTES */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+/*
+Follow - font-family: "Fredoka", sans-serif;
+Medu - Oswald
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html {
+  font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+  font-family: "Epilogue", sans-serif;
+  color: white;
+}
+
+i {
+  font-family: "Jet Brains", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-family: "Heebo", sans-serif;
+}
+
+html {
+  padding: 1vw;
+  background-image: linear-gradient(140deg, #1f1d3a, #000000, #1f1d3a);
+}
+
+
+
+/* HEADER */
+
+header {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 15vw;
+}
+
+.menu {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 175px;
+  height: 100%;
+  background-image: linear-gradient(to right, #000000, #1f1d3adc);
+  padding-top: 60px;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  font-size: 15px;
+  border-right: solid 2px rgb(2, 87, 59);
+  border-radius: 10px;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar ul li a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: #222;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.overlay.open {
+  display: block;
+}
+
+/* Header */
+
+main{
+    
+}
+
+div.desktop {
+  display: none;
+}
+
+section.rotas h1 {
+  font-size: 1.7rem;
+  animation: daEsquerda 0.8s ease-in forwards;
+}
+
+@keyframes daEsquerda {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+section.rotas h1 span {
+    background-color: rgb(14, 7, 109);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.paragrafo p{
+    padding:3vw 1vw ;
+}
+
+/*Visual-core*/
+
+.home-visual{
+  display: grid;
+  color: black;
+  font-weight: bold;
+}
+
+.home-visual ul{
+  display: grid;
+  padding: 1vw;
+  gap: 1vw;  
+}
+
+.home-visual ul li{
+  padding: 6vw;
+  border-radius:7px ;  
+  background-color: #ffffff;
+  align-items: end;
+}
+
+.home-visual ul li img{
+  height: 20vw;
+}
+
+li.mes{
+    animation: um 1s ease-in-out;
+  }
+
+li.egi{
+    text-align: end;
+    animation: dois 1s ease-in-out;
+  }
+
+li.gre{
+    animation: um 1s ease-in-out;
+  }
+
+li.chi{
+   
+    text-align: end;
+    animation: dois 1s ease-in-out;
+  }
+
+  @keyframes um{
+    to{
+   transform: translateX(0);
+} from {
+  transform: translateX(100%);
+ }
+  }
+
+  @keyframes dois{
+    to{
+  transform: translateX(0);
+} from {
+   transform: translateX(-100%);
+ }
+  }
+
+
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 600px){
+    html {
+    padding: 10vw 0 0 0;
+  }
+
+     /* HEADER */
+
+  div.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+  }
+
+  header {
+    display: flex;
+    background-color: #000000;
+    font-size: 0.4rem;
+    padding: 1.2vw;
+    align-items: baseline;
+    justify-content: baseline;
+    position: fixed;
+    left: 17%;
+    border-radius: 4vw;
+    top: 1vw;
+    z-index: 10;
+  }
+
+  header img {
+    height: 5vw;
+    padding-right: 4vw;
+  }
+
+  header button {
+    background-color: #1f1d3a;
+    padding: 1.2vw;
+    border-radius: 2vw;
+  }
+
+  header button:hover {
+    background: none;
+    border: solid 1px aquamarine;
+    transition: ease 1s;
+  }
+
+  .desktop ul {
+    display: flex;
+    gap: 1vw;
+  }
+
+  .desktop {
+    display: flex;
+    gap: 3vw;
+  }
+
+  .menu {
+    display: none;
+  }
+  img.mobile {
+    display: none;
+  }
+
+  .sobre {
+    text-align: center;
+    padding: 2vw;
+  }
+
+  .sobre h3 a {
+    color: aquamarine;
+    transition: 1s ease-in-out;
+    position: static;
+  }
+
+  .sobre h3 a:hover {
+    font-size: 1.4rem;
+  }
+
+
+
+
+
+
+
+}
