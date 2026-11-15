@@ -12,7 +12,7 @@ Medu - Oswald
 html {
   font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
   font-family: "Epilogue", sans-serif;
-  background-image: linear-gradient(140deg, #1f1d3a, #000000, #1f1d3a);
+  background-image: linear-gradient(140deg, #1f1d3a, #111112, #1f1d3a);
   color: white;
 }
 
@@ -225,7 +225,39 @@ header img {
 }
 
 .mainTech ol li {
-  padding: 5px;
+  padding: 10px 10px 25px 10px;
+  background-color:aquamarine ;
+  margin: 10px 2px;
+  border-radius: 10px;
+}
+
+.mainTech ol li p span.I {
+  background-color: red;
+  padding: 5px 8px;
+}
+
+.mainTech ol li p span.II {
+  background-color: red;
+  padding: 5px 8px;
+}
+
+.mainTech ol li p span.III {
+  background-color: red;
+  padding: 5px 8px;
+}
+
+.mainTech ol li p span.IV {
+  background-color: red;
+  padding: 5px 8px;
+}
+
+.mainTech ol li p span.V {
+  background-color: red;
+  padding: 5px 8px;
+}
+
+.mainTech ol li h3 {
+  padding-top: 10px;
 }
 /* MEDIA QUERY -------------------------------------------------------------------- DESKTOP */
 
