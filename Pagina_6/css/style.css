@@ -59,7 +59,8 @@ header {
 
 header img {
   height: 15vw;
-  padding-right: 20px;
+  width: auto;
+  margin: 20px;
 }
 
 /*----------menuMobile------------*/
@@ -75,7 +76,7 @@ header img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 175px;
   height: 100%;
   background-image: linear-gradient(to right, #000000, #1f1d3adc);
   border-right: solid 2px rgb(3, 102, 69);
@@ -83,6 +84,9 @@ header img {
   z-index: 10;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
+  font-size: 15px;
+  border-right: solid 2px rgb(2, 87, 59);
+  border-radius: 10px;
 }
 
 .sidebar.open {
@@ -127,6 +131,12 @@ header img {
 
 .overlay.open {
   display: block;
+}
+
+/* Header */
+
+div.desktop {
+  display: none;
 }
 
 /*--------------BANNER------------------*/
@@ -226,18 +236,21 @@ header img {
 
 .mainTech ol li {
   padding: 10px 10px 25px 10px;
-  background-color:aquamarine ;
+  background-color: aquamarine;
   margin: 10px 2px;
   border-radius: 10px;
 }
+
 .mainTech ol li div.tituloMainTech {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .mainTech ol li div.tituloMainTech h3 {
   padding-bottom: 7px;
 }
+
 .mainTech ol li p span.I {
   background-color: red;
   padding: 5px 8px;
@@ -266,13 +279,83 @@ header img {
 .mainTech ol li h3 {
   padding-top: 10px;
 }
+
 /* MEDIA QUERY -------------------------------------------------------------------- DESKTOP */
 
 @media screen and (min-width: 600px) {
+  main {
+    padding: 5.2vw 5.2vw;
+    margin-top: 90px;
+  }
 
   /*--------------HEADER--------------*/
+div.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+  }
 
-  header div.menuzao {
+  header {
+    display: flex;
+    background-color: #000000;
+    font-size: 0.4rem;
+    padding: 1.2vw;
+    align-items: baseline;
+    justify-content: baseline;
+    position: fixed;
+    left: 17%;
+    border-radius: 4vw;
+    top: 1vw;
+    z-index: 10;
+  }
+
+  header img {
+    height: 5vw;
+    padding-right: 4vw;
+  }
+
+  header button {
+    background-color: #1f1d3a;
+    padding: 1.2vw;
+    border-radius: 2vw;
+  }
+
+  header button:hover {
+    background: none;
+    border: solid 1px aquamarine;
+    transition: ease 1s;
+  }
+
+  .desktop ul {
+    display: flex;
+    gap: 1vw;
+  }
+
+  .desktop {
+    display: flex;
+    gap: 3vw;
+  }
+
+  .menu {
     display: none;
   }
+  img.mobile {
+    display: none;
+  }
+
+  .sobre {
+    text-align: center;
+    padding: 2vw;
+  }
+
+  .sobre h3 a {
+    color: aquamarine;
+    transition: 1s ease-in-out;
+    position: static;
+  }
+
+  .sobre h3 a:hover {
+    font-size: 1.4rem;
+  }
+  ;
 }
