@@ -62,25 +62,23 @@
               e conhecimentos que mudaram a forma como a humanidade produzia,
               construía, calculava, navegava e registrava informações.
             </p>
-            <p>
+            <p id="final">
               Nesta jornada, conheça alguns dos principais povos e civilizações
               que ajudaram a construir essa evolução e descubra como uma
               invenção de milhares de anos ainda influencia o mundo atual.
             </p>
           </div>
-          <div class="imagem">
             <div
               class="home-visual"
               aria-label="Ilustração abstrata da evolução tecnológica"
             >
-            <ul>
-              <li class="mes"><span>MESOPOTÂMIA</span> <img src="source/mesop1.jpeg" alt="" ></li>
-              <li class="egi"> <img src="source/egito.jpeg" alt=""> <span>EGITO</span> </li>
-              <li class="gre"> <span>GRÉCIA</span> <img src="source/Cairo.jpg" alt=""> </li>
-              <li class="chi"> <img src="source/china.jpeg" alt=""> <span>CHINA</span></li>
-            </ul>
+           
+              <div class="mes"><span>MESOPOTÂMIA</span> <img src="source/mesop1.jpeg" alt="" ></div>
+              <div class="egi"> <img src="source/egito.jpeg" alt=""> <span>EGITO</span> </div>
+              <div class="gre"> <span>GRÉCIA</span> <img src="source/Cairo.jpg" alt=""> </div>
+              <div class="chi"> <img src="source/china.jpeg" alt=""> <span>CHINA</span></div>
+            
             </div>
-          </div>
         </div>
         <div class="botoes" id="quiz">
           <p><a href="#povos">Conhecer os povos →</a></p>
@@ -92,19 +90,19 @@
 
       <section class="container" id="povos">
         <ul>
-          <li class="verde">
+          <li class="verde" style="background-color: #5a3b8c;">
             <h3>6+</h3>
             <p><span>CIVILIZAÇÕES EM DESTAQUE</span></p>
           </li>
-          <li class="vermelho">
+          <li class="vermelho" style="background-color: #2e6f73;">
             <h3>10 mil+</h3>
             <p><span>ANOS DE INOVAÇÕES</span></p>
           </li>
-          <li class="yellow">
+          <li class="yellow" style="background-color: #6da5c0;">
             <h3>04</h3>
             <p><span>ÁREAS DE TRANSFORMAÇÃO</span></p>
           </li>
-          <li class="azul">
+          <li class="azul" style="background-color: #4a5c6a;">
             <h3>01</h3>
             <p><span>HISTÓRIA CONECTADA</span></p>
           </li>
@@ -121,8 +119,8 @@
         <div class="container1">
           <ul>
             <li class="green">
-              <h3>MESOPOTÂMIA</h3>
-              <p>
+              <h3 onclick="aparecer(this)" >MESOPOTÂMIA</h3>
+              <p >
                 <span
                   >Escrita cuneiforme, roda, sistemas de irrigação e técnicas de
                   contagem ajudaram a organizar cidades e atividades
@@ -131,8 +129,8 @@
               </p>
             </li>
             <li class="red">
-              <h3>EGÍPCIOS</h3>
-              <p>
+              <h3 onclick="aparecer(this)">EGÍPCIOS</h3>
+              <p >
                 <span
                   >Arquitetura, engenharia, medicina, calendário e técnicas de
                   construção mostram o domínio de conhecimentos práticos e
@@ -140,13 +138,8 @@
                 >
               </p>
             </li>
-          </ul>
-        </div>
-
-        <div class="container2">
-          <ul>
             <li class="amarelo">
-              <h3>GREGOS</h3>
+              <h3 onclick="aparecer(this)">GREGOS</h3>
               <p>
                 <span
                   >Matemática, geometria, astronomia e pensamento científico
@@ -155,22 +148,17 @@
               </p>
             </li>
             <li class="blue">
-              <h3>CHINESES</h3>
-              <p>
+              <h3 onclick="aparecer(this)">CHINESES</h3>
+              <p >
                 <span
                   >Papel, impressão, bússola e pólvora são exemplos de invenções
                   chinesas que tiveram enorme impacto histórico.</span
                 >
               </p>
             </li>
-          </ul>
-        </div>
-
-        <div class="container1">
-          <ul>
             <li class="green">
-              <h3>ROMANOS</h3>
-              <p>
+              <h3 onclick="aparecer(this)">ROMANOS</h3>
+              <p >
                 <span
                   >Estradas, aquedutos, pontes, concreto e planejamento urbano
                   ampliaram a capacidade de construir e conectar grandes
@@ -179,8 +167,8 @@
               </p>
             </li>
             <li class="red">
-              <h3>MUNDO ISLÂMICO</h3>
-              <p>
+              <h3 onclick="aparecer(this)">MUNDO ISLÂMICO</h3>
+              <p >
                 <span
                   >Álgebra, astronomia, medicina, óptica e preservação de
                   conhecimentos antigos contribuíram para o avanço científico
@@ -191,6 +179,14 @@
           </ul>
         </div>
       </section>
+
+      <script>
+         
+        function aparecer(titulo){
+          let textinho = titulo.parentElement.querySelector("p")
+          textinho.classList.toggle("clikado")
+        }
+      </script>
 
       <section class="adress" id="linha-do-tempo">
         <div>
@@ -204,47 +200,53 @@
           </p>
           <ul>
             <li class="um">
-              <p><span>01</span> Mesopotâmia · escrita e roda</p>
+              <p><span style="background-color: #2b124c;">01</span> Mesopotâmia · escrita e roda </p>
             </li>
             <li class="dois">
-              <p><span>02</span> Egito · engenharia e calendário</p>
+              <p><span style="background-color:#854f6c ;">02</span> Egito · engenharia e calendário</p>
             </li>
             <li class="tres">
-              <p><span>03</span> Grécia · matemática e ciência</p>
+              <p><span style="background-color:#294d61 ;">03</span> Grécia · matemática e ciência</p>
             </li>
             <li class="quatro">
-              <p><span>04</span> China · papel, impressão e bússola</p>
+              <p><span style="background-color:#4338ca ;">04</span> China · papel, impressão e bússola</p>
             </li>
             <li class="cinco">
-              <p><span>05</span> Roma · infraestrutura e engenharia</p>
+              <p><span style="background-color: #f472b6;">05</span> Roma · infraestrutura e engenharia</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="imagem historia-banner" id="antiguidades">
+      <section class="historia" id="antiguidades">
         <div
           class="timeline-art"
           aria-label="Linha do tempo visual da evolução tecnológica"
         >
+        <h2>Linha do tempo da evolução tecnológica</h2>
           <div class="timeline-line"></div>
           <div class="timeline-item">
-            <strong>3500 a.C.</strong><span>Escrita</span>
+            <strong>3500 a.C. </strong><span>Escrita</span>
           </div>
+          <p>&darr;</p>
           <div class="timeline-item">
-            <strong>3000 a.C.</strong><span>Engenharia egípcia</span>
+            <strong>3000 a.C. </strong><span>Engenharia egípcia</span>
           </div>
+          <p>&darr;</p>
           <div class="timeline-item">
-            <strong>600 a.C.</strong><span>Matemática grega</span>
+            <strong>600 a.C. </strong><span>Matemática grega</span>
           </div>
+          <p>&darr;</p>
           <div class="timeline-item">
-            <strong>100 d.C.</strong><span>Infraestrutura romana</span>
+            <strong>100 d.C. </strong><span>Infraestrutura romana</span>
           </div>
+          <p>&darr;</p>
           <div class="timeline-item">
-            <strong>800+</strong><span>Ciência islâmica</span>
+            <strong>800+ </strong><span>Ciência islâmica</span>
           </div>
+          <p>&darr;</p>
           <div class="timeline-item">
-            <strong>1000+</strong><span>Inovações chinesas</span>
+            <strong>1000+ </strong><span>Inovações chinesas</span>
           </div>
         </div>
       </section>
@@ -257,22 +259,27 @@
               <h3>PASSO 01</h3>
               <p>Observar</p>
             </li>
+            <p>&darr;</p>
             <li class="zero2">
               <h3>PASSO 02</h3>
               <p>Inventar</p>
             </li>
+            <p>&darr;</p>
             <li class="zero3">
               <h3>PASSO 03</h3>
               <p>Adaptar</p>
             </li>
+            <p>&darr;</p>
             <li class="zero4">
               <h3>PASSO 04</h3>
               <p>Compartilhar</p>
             </li>
+            <p>&darr;</p>
             <li class="zero5">
               <h3>PASSO 05</h3>
               <p>Aperfeiçoar</p>
             </li>
+            <p>&darr;</p>
             <li class="zero6">
               <h3>PASSO 06</h3>
               <p>Transformar</p>
@@ -286,8 +293,7 @@
         <div class="final">
           <ul>
             <li class="fabrica">
-              <div class="legacy-icon">▦</div>
-              <p>MESOPOTÂMIA</p>
+              <p><span>▦ </span>MESOPOTÂMIA</p>
               <h3>A escrita</h3>
               <p>
                 Registrar informações tornou possível administrar cidades,
@@ -295,8 +301,7 @@
               </p>
             </li>
             <li class="martelo">
-              <div class="legacy-icon">⌘</div>
-              <p>CHINA</p>
+              <p> <span>⌘ </span>CHINA</p>
               <h3>A bússola</h3>
               <p>
                 O conhecimento sobre orientação e navegação ajudou a ampliar
@@ -304,8 +309,7 @@
               </p>
             </li>
             <li class="chave">
-              <div class="legacy-icon">⌬</div>
-              <p>GRÉCIA</p>
+              <p><span>⌬ </span>GRÉCIA</p>
               <h3>A matemática</h3>
               <p>
                 O raciocínio matemático e geométrico tornou-se uma base
