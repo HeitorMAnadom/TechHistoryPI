@@ -281,7 +281,8 @@ div.desktop {
 
 /*---------------------------FOOTER---------------------*/
 footer {
-  margin: 5vw 7vw;
+  padding: 3vw 6vw;
+  border-top:solid 2px rgb(3, 102, 69);
 }
 
 footer h2 {
