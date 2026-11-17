@@ -19,7 +19,10 @@ html {
 i {
   font-family: "Jet Brains", monospace;
 }
-
+body p a:hover {
+  color: aquamarine;
+  border-bottom: 1px solid aquamarine;
+}
 
 h1 {
   font-size: 2rem;
@@ -465,5 +468,19 @@ footer p {
   }
 
   /*---------------------------FOOTER---------------------*/
+  div.rodape {
+    margin: 3vw 1.4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  div.rodape a {
+    font-size: 0.6rem;
+  }
+  footer p {
+    margin: 3vw 1.4vw;
+    font-size: 0.4rem;
+    text-align: center;
+    padding: 50px;
+  }
 
 }
