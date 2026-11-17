@@ -14,44 +14,44 @@
 
 <body>
   <header>
-      <div class="desktop">
-        <img src="src/logo_cortada.png" alt="" />
+    <div class="desktop">
+      <a href="../index.html"><img src="src/logo_cortada.png" alt="" /></a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+        <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+        <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+        <li><a href="../Pagina_5/Pagina_5/evolucao.html">Curiosidades</a></li>
+        <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+      </ul>
+      <button><a href="Quiz/index.html">Jogue Quiz!</a></button>
+    </div>
+    <div class="menuzao">
+      <button class="menu" onclick="toggleMenu()">&#9776;</button>
+      <nav class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
           <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
           <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
-          <li><a href="../Pagina_5/Pagina_5/evolucao.html">Curiosidades</a></li>
+          <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
           <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
         </ul>
-        <button><a href="Quiz/index.html">Jogue Quiz!</a></button>
-      </div>
-      <div class="menuzao">
-        <button class="menu" onclick="toggleMenu()">&#9776;</button>
-        <nav class="sidebar" id="sidebar">
-          <button class="close-btn" onclick="toggleMenu()">&times;</button>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
-            <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
-            <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
-            <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
-            <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
-          </ul>
-        </nav>
-        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-        <script>
-          function toggleMenu() {
-            const sidebar = document.getElementById("sidebar");
-            const overlay = document.getElementById("overlay");
-            sidebar.classList.toggle("open");
-            overlay.classList.toggle("open");
-          }
-        </script>
-      </div>
-      <img class="mobile" src="src/logo_cortada.png" alt="" />
-    </header>
+      </nav>
+      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+      <script>
+        function toggleMenu() {
+          const sidebar = document.getElementById("sidebar");
+          const overlay = document.getElementById("overlay");
+          sidebar.classList.toggle("open");
+          overlay.classList.toggle("open");
+        }
+      </script>
+    </div>
+    <img class="mobile" src="src/logo_cortada.png" alt="" />
+  </header>
 
   <main>
 
@@ -69,6 +69,7 @@
         antigo inovava para garantir comida, território e ordem socials
       </p>
       <ol>
+
         <li>
           <h3>1. Sobrevivência e Alimentação</h3>
           <p>
@@ -88,6 +89,7 @@
             gigantes.
           </p>
         </li>
+
         <li>
           <h3>3. Centralização do Poder e Religião</h3>
           <p>
@@ -106,6 +108,7 @@
             comerciais mais longas e seguras.
           </p>
         </li>
+
       </ol>
     </section>
     <section class="access">
@@ -222,33 +225,42 @@
       </ol>
     </section>
   </main>
+
   <footer>
     <div>
-      <ul>
+      <ul class="mapa">
         <h2>Mapa</h2>
-        <li><a>Home</a></li>
-        <li><a>Sobre</a></li>
-        <li><a>Circulação</a></li>
-        <li><a>Impactos</a></li>
-        <li><a>Curiosidades</a></li>
-        <li><a>Antiguidades</a></li>
+        <li><a href="../Pagina_1/home.html">Home</a></li>
+        <li><a href="../Pagina_1/sobre.html">Evolução</a></li>
+        <li><a href="../Pagina_2/pag_2PI/pag_2PI/evolucao.html">Circulação</a></li>
+        <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+        <li><a href="../Pagina_5/evolucao.html">Costumes</a></li>
+        <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
       </ul>
-      <ul>
+      <ul class="redes">
         <h2>Redes</h2>
-        <li><a>Instagram</a></li>
-        <li><a>Github</a></li>
+        <li><a href="https://www.instagram.com/tech_and_history?stkn=Y3F2dmEzdG81b2Vv">Instagram</a></li>
+        <li><a
+            href="https://github.com/vicenzoalvesifc-sudo/Com-rcioe-circula-o-de-tecnologia----Civiliza-es">Github</a>
+        </li>
       </ul>
-      <ul>
+      <ul class="fontes">
         <h2>Fontes</h2>
-        <li><a>Site1</a></li>
-        <li><a>Site2</a></li>
+        <li><a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/">HostGator</a></li>
+        <li><a href="https://e-safer.com.br/evolucao-da-tecnologia-durante-as-decadas/">e-Safer</a></li>
+        <li><a href="https://www.britannica.com/technology/technology">Encyclopaedia Britannica</a></li>
       </ul>
     </div>
     <p>
-      © 2026 Tech&History. Desenvolvido por: Gabriel, Andrius, Matheus Mello,
+      <span>© 2026 Tech&History</span>. Desenvolvido por: Gabriel, Andrius, Matheus Mello,
       Matheus Rafael, Vicenzo e Heitor
     </p>
   </footer>
+
+
+
+
+
 </body>
 
 </html>
