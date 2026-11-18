@@ -513,25 +513,377 @@ padding: 1vw 2vw;
   }
   img.mobile {
     display: none;
-  }
+  }  
 
-  .sobre {
+ /* header */
+
+main{
     text-align: center;
-    padding: 2vw;
+}
+section.rotas h1 {
+  font-size: 1.2rem;
+  animation: daEsquerda 0.8s ease-in forwards;
+}
+
+@keyframes daEsquerda {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+section.rotas h1 span {
+    background-color: rgb(14, 7, 109);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.paragrafo p{
+    padding:3vw 12vw ;
+    font-size:0.8rem ;
+}
+
+#final {
+  padding-bottom: 3vw;
+}
+
+/*Visual-core*/
+
+.home-visual{
+  display: grid;
+  color: black;
+  font-weight: bold;
+  gap: 2vw;
+  padding: 2vw 30vw;
+  font-size: 0.8rem;
+}
+
+
+.home-visual div{
+  padding: 1vw;
+  border-radius:7px ;  
+  background-color: antiquewhite;
+}
+
+.home-visual div img{
+  height: 4vw;
+  margin: -1vw;
+}
+
+div.mes{
+  text-align: start;
+    animation: um 1s ease-in-out;
+    img{
+      position: relative;
+      left: 31.7vmin;
+      border-bottom-left-radius:100% ;
+      border-top-right-radius:7px ;
+    }
+    
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   }
 
-  .sobre h3 a {
-    color: aquamarine;
-    transition: 1s ease-in-out;
-    position: static;
+div.egi{
+    text-align: end;
+    animation: dois 1s ease-in-out;
+    img{
+      position: relative;
+      right: 51.1vmin;
+      border-bottom-right-radius:100% ;
+      border-top-left-radius:7px ;
+    }
+    
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
   }
 
-  .sobre h3 a:hover {
-    font-size: 1.4rem;
+div.gre{
+  text-align: start;
+    animation: um 1s ease-in-out;
+    img{
+      position: relative;
+      left: 46.4vmin;
+      border-bottom-left-radius:100% ;
+      border-top-right-radius:7px ;
+    }
+    
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
   }
 
+div.chi{
+   
+    text-align: end;
+    animation: dois 1s ease-in-out;
+    img{
+      position: relative;
+      right: 51.6vmin;
+      border-bottom-right-radius:100% ;
+      border-top-left-radius:7px ;
+    }
+    margin-bottom: 3vw;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  }
+
+  @keyframes um{
+    to{
+   transform: translateX(0);
+} from {
+  transform: translateX(100%);
+ }
+  }
+
+  @keyframes dois{
+    to{
+  transform: translateX(0);
+} from {
+   transform: translateX(-100%);
+ }
+  }
+
+.container{
+  padding: 12vw;  
+  justify-content: center;
+}
+
+.container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+  justify-self: center;
+  justify-content: center;
+}
+
+.container ul li {
+  height: 16vw;
+  width: 16vw;
+  text-align: start;
+  padding: 2vw;
+  border: solid 1px black;
+  box-shadow: rgb(204, 204, 204) 0.8vw 0.8vw;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  font-size: 0.5rem;
+}
+
+@keyframes appear{
+  from{
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  } to{
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.container ul li h3{
+  font-size: 0.8rem;
+  padding: 1vw 0 1vw 1vw;
+  border-bottom: solid 8px rgb(255, 255, 255);
+  margin-bottom: 2vw;
+}
 
 
+.frentes{
+  border: solid 2vw rgb(255, 255, 255);
+ padding: 5vw;
+}
+
+.frentes h2{
+  font-size: 1.1rem ;
+  padding-bottom: 4vw;
+  span{
+    background-color: rgb(14, 7, 109);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+}
+
+.frentes>p{
+  font-size: 0.8rem;
+  padding: 3vw 6vw;
+}
+
+.frentes h3 {
+  font-size: 1rem;
+  border-bottom: solid 2px gray;
+}
+
+
+
+.frentes ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  gap: 3vw;
+  color: black;
+
+}
+
+.frentes ul li{
+  background-color: white;
+  border-radius: 10px;
+  padding: 2vw;
+  width: 25vw;
+}
+
+.frentes ul li p{
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, opacity 1s ease;
+  font-size: 0.5rem;
+  
+}
+
+.frentes ul li p.clikado{
+  max-height: 500px;
+  opacity: 1;
+  padding-top:1vw ;
+}
+
+.adress{
+  padding: 15vw 15vw 5vw 15vw;  
+  p{
+    font-size: 0.7rem;
+  }
+
+  p.cima{
+    padding: 1vw 0;
+  }
+}
+
+.adress h2{
+  font-size: 1.1rem ;
+  padding: 5vw 8vw;
+  span{
+    background-color: rgb(14, 7, 109);
+    padding: 3px 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+}
+
+.adress .lista{
+background-color: #e8e8eb;
+padding: 3vw;
+border-radius: 7px;
+color: black;
+}
+
+.adress .lista ul{
+background-color: white;
+padding: 1vw;
+border-radius: 7px;
+}
+
+.adress .lista ul li{
+  text-align: start;
+  padding: 1.3vw 1vw 1vw 1vw ;
+}
+
+.adress .lista ul li:not(:last-child){
+  border-bottom: solid 2px #e8e8eb;
+}
+
+.adress .lista ul li p span{
+padding: 0.5vw 1vw;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 5px;
+  color: white;
+}
+
+.historia {
+  background-color: #28264b83;
+  padding: 5vw;
+  margin: 20vw;
+  border-radius: 5px;
+
+  div.timeline-art h2{
+    font-size: 1rem;
+  }
+
+}
+
+.historia h2{
+  font-size: 1.3rem;
+  padding-bottom: 1vw;
+}
+
+.historia div.timeline-art div.timeline-item{
+  background-color: #5a56aa8c;
+  padding: 3vw;
+  border-radius: 5px;
+}
+
+.ciclo{
+  padding: 5vw 8vw;
+}
+
+.ciclo div.lista-ciclo{
+  align-items: center;
+  justify-content: center;
+  background-color: #28264b83;
+  margin: 12vw;
+  padding: 10vw;
+  border-radius: 5px;
+}
+
+.ciclo div.lista-ciclo ul li{
+  background-color: #5a56aa8c;
+  padding: 1.3vw 1vw 1vw 1vw;
+  border-radius: 5px;
+}
+
+.historias{
+  background-color: #e8e8eb;
+  color: #000000;
+  padding: 3vw 12vw;
+
+
+ h2{
+  font-size: 1.2rem;
+  padding:  1vw;
+ }
+
+ .final {
+  text-align: start;
+ }
+
+ li{
+  padding-bottom: 2vw;
+ }
+ 
+ p{
+  font-size: 0.7rem;
+ }
+
+ p.b{
+  border-bottom: solid 1px #c2c2c2;
+ }
+
+ p span{
+  color: rgb(255, 22, 73);
+  font-size: 1.2rem;
+  border-bottom: none;
+ }
+
+ h3{
+  font-size: 1.1rem;
+ }
+
+}
 
 
 

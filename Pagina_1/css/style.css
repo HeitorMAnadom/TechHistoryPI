@@ -251,7 +251,7 @@ div.desktop {
 
   section.principal div.mona p {
     font-size: 0.7rem;
-    padding: 7vw;
+    padding: 6vw 12vw;
     text-align: start;
   }
 
@@ -260,7 +260,7 @@ div.desktop {
   }
 
   section.principal div.mona button a {
-    padding: 2vw;
+    padding: 1vw;
     background-image: linear-gradient(
       90deg,
       rgb(116, 231, 193),
@@ -272,7 +272,7 @@ div.desktop {
   }
 
   section.principal div.mona button:hover a {
-    padding: 2vw;
+    padding: 1vw;
     background-image: linear-gradient(
       90deg,
       rgba(255, 0, 0, 0),
@@ -281,9 +281,30 @@ div.desktop {
     border: solid 1px white;
     border-radius: 10px;
   }
-
   
+  .sobre {
+    text-align: center;
+    padding: 2vw;
+  }
 
+  .sobre h3{
+    font-size: 0.7rem;
+  }
+
+  .sobre h3 a {
+    background-color: rgb(41, 38, 85);
+    color: aquamarine;
+    transition: 0.4s ease-in-out;
+    position: static;
+    font-size: 0.7rem;
+    padding: 1vw;
+  }
+
+  .sobre h3 a:hover {
+    font-size: 0.72rem;
+  }
+  
+  
   /* HEADER */
 
   div.desktop {
@@ -294,7 +315,7 @@ div.desktop {
 
   header {
     display: flex;
-    background-color: #000000;
+    background-color: #000000af;
     font-size: 0.4rem;
     padding: 1.2vw;
     align-items: baseline;
@@ -340,18 +361,4 @@ div.desktop {
     display: none;
   }
 
-  .sobre {
-    text-align: center;
-    padding: 2vw;
-  }
-
-  .sobre h3 a {
-    color: aquamarine;
-    transition: 1s ease-in-out;
-    position: static;
-  }
-
-  .sobre h3 a:hover {
-    font-size: 1.4rem;
-  }
 }
