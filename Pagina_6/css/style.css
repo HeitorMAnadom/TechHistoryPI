@@ -42,16 +42,54 @@ p {
 /*--------------------------------------Mobile----------------------------------------------*/
 
 /* HEADER */
-
 header {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: #000000;
 }
 
-header img {
-  height: 15vw;
+header div.desktop {
+  text-align: center;
+}
+
+header div.desktop h1 a img {
+  width: 50%;
+  margin: 30px;
+}
+
+header div.desktop nav ul li {
+  padding: 0 0 20px 0;
+}
+
+header div.desktop nav ul li a {
+  font-size: 0.8rem;
+}
+
+header div.desktop nav ul li a:hover {
+  color: #9ba8ab;
+}
+
+header div.desktop p.botao a {
+  background-color: #6200ee;
+  color: #e9e9e9;
+  padding: 6px 10px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+header div.desktop p.botao a:hover {
+  color: white;
+  background-color: #4504a1;
+}
+
+header div.mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div.mobile img.mobile {
+  width: auto;
+  height: 80px;
+  padding: 10px;
 }
 
 .menu {
@@ -60,6 +98,7 @@ header img {
   border: none;
   cursor: pointer;
   padding: 15px;
+  color: white;
 }
 
 .sidebar {
@@ -355,10 +394,6 @@ footer p {
 
 @media screen and (min-width: 600px) {
 
-  html{
-    padding-top: 2vw;
-  }
-
   main p {
     font-size: 0.7rem;
   }
@@ -367,84 +402,38 @@ footer p {
     padding-bottom: 20px;
   }
 
-  /*--------------HEADER--------------*/
-  div.desktop {
+  /*--------------HEADER---------PODE COPIAR TD-----*/
+  header div.desktop {
+    display: block;
+    background-color: #000001;
+  }
+
+  header div nav {
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    gap: 250px;
+    padding: 15px;
+    color: white;
+    justify-content: space-between;
   }
-
-  header {
+  header div nav a img {
+    padding-right: 20px;
+    width: auto;
+    height: 100px;
+  }
+  header div nav ul{
     display: flex;
-    background-color: #000000af;
-    font-size: 0.4rem;
-    padding: 1.2vw;
-    align-items: baseline;
-    justify-content: baseline;
-    position: fixed;
-    left: 17%;
-    border-radius: 4vw;
-    top: 1vw;
-    z-index: 10;
+    justify-content: space-between;
   }
 
-  header img {
-    height: 5vw;
-    padding-right: 4vw;
-  }
 
-  header button {
-    background-color: #1f1d3a;
-    padding: 1.2vw;
-    border-radius: 2vw;
-  }
-
-  header button:hover {
-    background: none;
-    border: solid 1px aquamarine;
-    transition: ease 1s;
-  }
-
-  .desktop ul {
-    display: flex;
-    gap: 1vw;
-  }
-
-  .desktop {
-    display: flex;
-    gap: 3vw;
-  }
-
-  .menu {
-    display: none;
-  }
-  img.mobile {
-    display: none;
-  }  
-
- /* header */
-  img.mobile {
+  header div.mobile {
     display: none;
   }
 
-  .sobre {
-    text-align: center;
-    padding: 2vw;
-  }
-
-  .sobre h3 a {
-    color: aquamarine;
-    transition: 1s ease-in-out;
-    position: static;
-  }
-
-  .sobre h3 a:hover {
-    font-size: 1.4rem;
-  }
-
+  /*------------------BANNER--------------------------*/
   .banner {
     padding: 90px 12%;
-    padding-top: 200px;
   }
 
   /*--------------------MOTIFS----------------------*/
@@ -481,16 +470,19 @@ footer p {
 
   /*--------------------access-----------------------------*/
   .access {
-      padding: 70px 10%;
+    padding: 70px 10%;
   }
+
   .access h2 {
     font-size: 1.4rem;
     padding-bottom: 50px;
     text-align: center;
   }
+
   .access ul {
     margin: 0 20px 0 20px;
   }
+
   .access ul li {
     border-radius: 10px;
     padding: 15px;
@@ -505,8 +497,9 @@ footer p {
 
   /*------------------mainTech------------------------------------*/
   .mainTech {
-      padding: 80px 10%;
+    padding: 80px 10%;
   }
+
   .mainTech h2 {
     font-size: 1.4rem;
     padding-bottom: 50px;
