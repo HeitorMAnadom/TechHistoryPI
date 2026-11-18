@@ -41,24 +41,19 @@ p {
 
 /*--------------------------------------Mobile----------------------------------------------*/
 
-/*------------------ HEADER --------------*/
+/* HEADER */
 
 header {
-  padding-top: 20px;
   color: white;
   display: flex;
   align-items: center;
-  background-color: #000000;
   justify-content: space-between;
 }
 
 header img {
   height: 15vw;
-  width: auto;
-  margin: 20px;
 }
 
-/*----------menuMobile------------*/
 .menu {
   font-size: 30px;
   background: none;
@@ -74,7 +69,6 @@ header img {
   width: 175px;
   height: 100%;
   background-image: linear-gradient(to right, #000000, #1f1d3adc);
-  border-right: solid 2px rgb(3, 102, 69);
   padding-top: 60px;
   z-index: 10;
   transform: translateX(-100%);
@@ -127,6 +121,7 @@ header img {
 .overlay.open {
   display: block;
 }
+
 
 /* Header */
 
