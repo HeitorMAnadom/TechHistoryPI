@@ -47,16 +47,7 @@ section.principal div.mona h1 {
   animation: daEsquerda 0.8s ease-in forwards;
 }
 
-@keyframes daEsquerda {
-  0% {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
+ 
 
 section.principal div.mona h1 span {
     background-color: rgb(14, 7, 109);
@@ -221,17 +212,6 @@ div.desktop {
   section.principal div.mona h1 {
     font-size: 1.2rem;
     animation: daEsquerda 1s ease-in-out forwards;
-  }
-
-  @keyframes daEsquerda {
-    0% {
-      transform: translateX(-50%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0%);
-      opacity: 1;
-    }
   }
 
   section.principal div.mona h1 span {

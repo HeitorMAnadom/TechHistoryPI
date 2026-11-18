@@ -34,7 +34,6 @@ p {
 }
 
 html {
-  padding: 1vw;
   background-image: linear-gradient(140deg, #1f1d3a, #000000, #1f1d3a);
 }
 
@@ -124,28 +123,23 @@ header img {
 /* Header */
 
 main{
-    text-align: center;
+  text-align: center;
 }
+
 
 div.desktop {
   display: none;
 }
 
+.rotas{
+  padding: 2vw;
+}
+
 section.rotas h1 {
-  font-size: 1.7rem;
+  font-size: 2rem;
   animation: daEsquerda 0.8s ease-in forwards;
 }
 
-@keyframes daEsquerda {
-  0% {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
 
 section.rotas h1 span {
     background-color: rgb(14, 7, 109);
@@ -165,86 +159,23 @@ section.rotas h1 span {
 /*Visual-core*/
 
 .home-visual{
-  display: grid;
-  color: black;
-  font-weight: bold;
-  gap: 2vw;
-  padding: 3vw;
+  padding: 0vw 20vw 5vw 20vw;
+
 }
 
-
-.home-visual div{
-  padding: 6vw;
-  border-radius:7px ;  
+.home-visual div.civilizacao{
   background-color: antiquewhite;
+  padding: 2vw;
+  margin: 1vw;
+  border-radius: 10px;
   
 }
 
-.home-visual div img{
-  height: 20vw;
-  margin: -6vw;
+.home-visual div span{
+  border-bottom: solid 2px gray; 
+  color: black;
 }
 
-div.mes{
-  text-align: start;
-    animation: um 1s ease-in-out;
-    img{
-      position: relative;
-      left: 15.6vmin;
-      border-bottom-left-radius:100% ;
-      border-top-right-radius:7px ;
-    }
-  }
-
-div.egi{
-    text-align: end;
-    animation: dois 1s ease-in-out;
-    img{
-      position: relative;
-      right: 43vmin;
-      border-bottom-right-radius:100% ;
-      border-top-left-radius:7px ;
-    }
-  }
-
-div.gre{
-  text-align: start;
-    animation: um 1s ease-in-out;
-    img{
-      position: relative;
-      left: 34.6vmin;
-      border-bottom-left-radius:100% ;
-      border-top-right-radius:7px ;
-    }
-  }
-
-div.chi{
-   
-    text-align: end;
-    animation: dois 1s ease-in-out;
-    img{
-      position: relative;
-      right: 44.6vmin;
-      border-bottom-right-radius:100% ;
-      border-top-left-radius:7px ;
-    }
-  }
-
-  @keyframes um{
-    to{
-   transform: translateX(0);
-} from {
-  transform: translateX(100%);
- }
-  }
-
-  @keyframes dois{
-    to{
-  transform: translateX(0);
-} from {
-   transform: translateX(-100%);
- }
-  }
 
 .container{
   padding: 12vw;  
@@ -253,7 +184,7 @@ div.chi{
 .container ul {
   display: grid;
   gap: 3vw;
-  justify-self: center;
+  justify-content: center;
 }
 
 .container ul li {
@@ -276,6 +207,7 @@ div.chi{
     opacity: 1;
     transform: translateX(0);
   }
+
 }
 
 .container ul li h3{
@@ -315,7 +247,7 @@ div.chi{
 
 .frentes ul{
   display: grid;
-  justify-self: center;
+  justify-content: center;
   gap: 3vw;
   color: black;
 
@@ -342,9 +274,11 @@ div.chi{
 
 .adress{
   padding: 6vw;  
+  background-color: white;
 }
 
 .adress h2{
+  color: black;
   font-size: 1.5rem ;
   padding: 5vw 8vw;
   span{
@@ -352,25 +286,28 @@ div.chi{
     padding: 3px 10px;
     display: inline-block;
     border-radius: 10px;
+    color :white;
   }
 }
 
 .adress .lista{
-background-color: #e8e8eb;
 padding: 3vw;
 border-radius: 7px;
 color: black;
 }
 
 .adress .lista ul{
-background-color: white;
-padding: 2vw;
-border-radius: 7px;
+  padding: 2vw;
+  border-radius: 7px;
+  color: white;
 }
 
 .adress .lista ul li{
   text-align: start;
   padding: 4vw 3vw 3vw 3vw ;
+  background-color: rgb(47, 63, 98);
+  border-radius: 7px;
+  
 }
 
 .adress .lista ul li:not(:last-child){
@@ -523,17 +460,7 @@ main{
 section.rotas h1 {
   font-size: 1.2rem;
   animation: daEsquerda 0.8s ease-in forwards;
-}
-
-@keyframes daEsquerda {
-  0% {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
+  margin: 0 10vw;
 }
 
 section.rotas h1 span {
@@ -545,7 +472,7 @@ section.rotas h1 span {
 }
 
 .paragrafo p{
-    padding:3vw 12vw ;
+    padding:3vw 15vw ;
     font-size:0.8rem ;
 }
 
@@ -555,99 +482,6 @@ section.rotas h1 span {
 
 /*Visual-core*/
 
-.home-visual{
-  display: grid;
-  color: black;
-  font-weight: bold;
-  gap: 2vw;
-  padding: 2vw 30vw;
-  font-size: 0.8rem;
-}
-
-
-.home-visual div{
-  padding: 1vw;
-  border-radius:7px ;  
-  background-color: antiquewhite;
-}
-
-.home-visual div img{
-  height: 4vw;
-  margin: -1vw;
-}
-
-div.mes{
-  text-align: start;
-    animation: um 1s ease-in-out;
-    img{
-      position: relative;
-      left: 31.7vmin;
-      border-bottom-left-radius:100% ;
-      border-top-right-radius:7px ;
-    }
-    
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-  }
-
-div.egi{
-    text-align: end;
-    animation: dois 1s ease-in-out;
-    img{
-      position: relative;
-      right: 51.1vmin;
-      border-bottom-right-radius:100% ;
-      border-top-left-radius:7px ;
-    }
-    
-  animation-timeline: view();
-  animation-range: entry 0% cover 30%;
-  }
-
-div.gre{
-  text-align: start;
-    animation: um 1s ease-in-out;
-    img{
-      position: relative;
-      left: 46.4vmin;
-      border-bottom-left-radius:100% ;
-      border-top-right-radius:7px ;
-    }
-    
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-  }
-
-div.chi{
-   
-    text-align: end;
-    animation: dois 1s ease-in-out;
-    img{
-      position: relative;
-      right: 51.6vmin;
-      border-bottom-right-radius:100% ;
-      border-top-left-radius:7px ;
-    }
-    margin-bottom: 3vw;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-  }
-
-  @keyframes um{
-    to{
-   transform: translateX(0);
-} from {
-  transform: translateX(100%);
- }
-  }
-
-  @keyframes dois{
-    to{
-  transform: translateX(0);
-} from {
-   transform: translateX(-100%);
- }
-  }
 
 .container{
   padding: 12vw;  
@@ -724,7 +558,7 @@ div.chi{
 .frentes ul{
   display: flex;
   flex-wrap: wrap;
-  justify-self: center;
+  justify-content: center;
   gap: 3vw;
   color: black;
 
@@ -735,6 +569,7 @@ div.chi{
   border-radius: 10px;
   padding: 2vw;
   width: 25vw;
+  justify-self: center;
 }
 
 .frentes ul li p{
