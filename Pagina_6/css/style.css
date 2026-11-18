@@ -355,6 +355,10 @@ footer p {
 
 @media screen and (min-width: 600px) {
 
+  html{
+    padding-top: 2vw;
+  }
+
   main p {
     font-size: 0.7rem;
   }
@@ -372,7 +376,7 @@ footer p {
 
   header {
     display: flex;
-    background-color: #000000;
+    background-color: #000000af;
     font-size: 0.4rem;
     padding: 1.2vw;
     align-items: baseline;
@@ -381,7 +385,7 @@ footer p {
     left: 17%;
     border-radius: 4vw;
     top: 1vw;
-    z-index: 100;
+    z-index: 10;
   }
 
   header img {
@@ -396,9 +400,8 @@ footer p {
   }
 
   header button:hover {
-    color: #2f3e88;
     background: none;
-    border: solid 1px #2f3e88;
+    border: solid 1px aquamarine;
     transition: ease 1s;
   }
 
@@ -415,7 +418,11 @@ footer p {
   .menu {
     display: none;
   }
+  img.mobile {
+    display: none;
+  }  
 
+ /* header */
   img.mobile {
     display: none;
   }

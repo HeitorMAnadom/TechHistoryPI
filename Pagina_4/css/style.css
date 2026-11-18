@@ -564,31 +564,66 @@ footer p {
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 600px) {
+
+html{
+  padding-top: 2vw;
+}
+
+div.desktop {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+  }
+
   header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3vw 7vw;
-    text-align: left;
-  }
-
-  header h1 {
-    padding: 0 0 10vw;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 30px;
-  }
-
-  nav ul li a {
+    background-color: #000000af;
     font-size: 0.4rem;
+    padding: 1.2vw;
+    align-items: baseline;
+    justify-content: baseline;
+    position: fixed;
+    left: 17%;
+    border-radius: 4vw;
+    top: 1vw;
+    z-index: 10;
   }
 
-  nav ul li p {
-    white-space: nowrap;
+  header img {
+    height: 5vw;
+    padding-right: 4vw;
   }
 
+  header button {
+    background-color: #1f1d3a;
+    padding: 1.2vw;
+    border-radius: 2vw;
+  }
+
+  header button:hover {
+    background: none;
+    border: solid 1px aquamarine;
+    transition: ease 1s;
+  }
+
+  .desktop ul {
+    display: flex;
+    gap: 1vw;
+  }
+
+  .desktop {
+    display: flex;
+    gap: 3vw;
+  }
+
+  .menu {
+    display: none;
+  }
+  img.mobile {
+    display: none;
+  }  
+
+ /* header */
   section.rotas {
     margin: 0 7vw;
     text-align: left;
