@@ -13,6 +13,7 @@ Medu - Oswald
 html {
   font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
   font-family: "Epilogue", sans-serif;
+  scroll-behavior: smooth ;
 }
 
 i {
@@ -35,86 +36,99 @@ p {
 }
 
 /* banner */
-  .banner {
-   padding: 30px;
-   background-color: rgb(8, 13, 24);
-   color: whitesmoke;
-   border-bottom: 2px solid rgb(107, 106, 106);
-  }
-  .banner h1 {
-    font-size: 2rem;
-    padding: 0px 0px 15px;
-    text-align: center;
-  }
-  .banner h1 span {
-    color: #000080;
-  }
-  .banner ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 25px 0px 0px 0px;
-  }
-  .banner ul li.azul {
-    background-color: #2f3e88;
-    border-radius: 5px;
-    padding: 7px;
-    color: black;
-  }
-  .banner p span {
-    color: #2f3e88;
-    font-family: "Fjalla one", sans-serif;
-  }
-  .banner ul li.vazio {
-    background-color:  rgb(17, 30, 59);
-    padding: 7px;
-    border: 2px solid whitesmoke;
-    border-radius: 5px;
-  }
-  .banner ul li p {
-    font-size: 0.7rem;
-  }
+.banner {
+  padding: 30px;
+  background-color: rgb(8, 13, 24);
+  color: whitesmoke;
+  border-bottom: 2px solid rgb(107, 106, 106);
+}
 
-  /* Eras */
-  .eras {
-    background-color:  rgb(15, 23, 40);
-    border-bottom: 2px solid gray;
-    padding: 30px;
-  }
-  .eras ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .eras h2 {
-    font-size: 1.8rem;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px;
-  }
-  .eras ul li img {
-   width: 5cm;
-   border-radius: 5px;
-  }
-  .eras ul li {
-    text-align: center;
-  }
-  .eras ul li h3 {
-    color: #2f3e88;
-    padding: 10px;
-  }
-  .eras ul li p {
-    color: whitesmoke;
-  }
-  
-  /* futuro */
-  .futuro {
-    background-color: rgb(8, 13, 24);
-    padding: 30px;
-  }
-  .futuro p span {
-    color: #2f3e88;
-  }
+.banner h1 {
+  font-size: 2rem;
+  padding: 0px 0px 15px;
+  text-align: center;
+}
+
+.banner h1 span {
+  color: #000080;
+}
+
+.banner ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px 0px 0px 0px;
+}
+
+.banner ul li.azul {
+  background-color: #2f3e88;
+  border-radius: 5px;
+  padding: 7px;
+  color: black;
+}
+
+.banner p span {
+  color: #2f3e88;
+  font-family: "Fjalla one", sans-serif;
+}
+
+.banner ul li.vazio {
+  padding: 7px;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.banner ul li p {
+  font-size: 0.7rem;
+}
+
+/* Eras */
+.eras {
+  background-color: rgb(15, 23, 40);
+  border-bottom: 2px solid gray;
+  padding: 30px;
+}
+
+.eras ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.eras h2 {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
+.eras ul li img {
+  width: 5cm;
+  border-radius: 5px;
+}
+
+.eras ul li {
+  text-align: center;
+}
+
+.eras ul li h3 {
+  color: #2f3e88;
+  padding: 10px;
+}
+
+.eras ul li p {
+  color: whitesmoke;
+}
+
+/* futuro */
+.futuro {
+  background-color: rgb(8, 13, 24);
+  padding: 30px;
+}
+
+.futuro p span {
+  color: #2f3e88;
+}
 
 .futuro {
   width: 100%;
@@ -187,75 +201,96 @@ p {
   color: #647386;
   margin: 0;
 }
+footer {
+  padding: 3vw 6vw;
+  border-top:solid 2px rgb(3, 102, 69);
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+
+}
+
+footer a:hover {
+  border-bottom: 2px solid #000080;
+  color: #000080;
+}
+
+footer p {
+  padding: 20px 0;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
-  
 
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 900px) {
 
-  
-/* Banner - Desktop */
-.banner {
-  min-height: 520px;
-  padding: 90px 12%;
-  background-color: #010123;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
 
-/* Identificação do site */
-.banner > p:first-child {
-  white-space: nowrap;
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  margin-bottom: 22px;
-}
+  /* Banner - Desktop */
+  .banner {
+    min-height: 520px;
+    padding: 90px 12%;
+    background-color: #010123;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
-/* Título */
-.banner h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-  text-align: left;
-  padding-bottom: 18px;
-}
+  /* Identificação do site */
+  .banner>p:first-child {
+    white-space: nowrap;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+  }
 
-.banner h1 span {
-  color: #2f3e88;
-}
+  /* Título */
+  .banner h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: left;
+    padding-bottom: 18px;
+  }
 
-/* Descrição */
-.banner > p:nth-of-type(2) {
-  max-width: 680px;
-  font-size: 0.8rem;
-  line-height: 1.8;
-  text-align: left;
-  text-wrap: pretty;
-}
+  .banner h1 span {
+    color: #2f3e88;
+  }
 
-/* Botões */
-.banner ul {
-  display: flex;
-  justify-content: flex-start;
-  gap: 18px;
-  padding-top: 25px;
-}
+  /* Descrição */
+  .banner>p:nth-of-type(2) {
+    max-width: 680px;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    text-align: left;
+    text-wrap: pretty;
+  }
 
-.banner .azul {
-  background-color: #2f3e88;
-}
+  /* Botões */
+  .banner ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 18px;
+    padding-top: 25px;
+  }
 
-.banner .vazio {
-  background-color: #010123;
-  border: 1px solid whitesmoke;
-}
+  .banner .azul {
+    background-color: #2f3e88;
+  }
 
-.banner ul li {
-  padding: 10px 18px;
-}
+  .banner .vazio {
+    background-color: #010123;
+    border: 1px solid whitesmoke;
+  }
+
+  .banner ul li {
+    padding: 10px 18px;
+  }
 
 
   /* Grandes eras */
@@ -335,4 +370,19 @@ p {
     font-size: 0.75rem;
     text-align: left;
   }
+    div.rodape {
+    margin: 3vw 1.4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  div.rodape a {
+    font-size: 0.6rem;
+  }
+  footer p {
+    margin: 3vw 1.4vw;
+    font-size: 0.4rem;
+    text-align: center;
+    padding: 50px;
+  }
+
 }
