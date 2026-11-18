@@ -1,5 +1,6 @@
+/* Fontes */
 /* === IMPORTAÇÃO DE FONTES */
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 /*
@@ -12,6 +13,7 @@ Medu - Oswald
 html {
   font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
   font-family: "Epilogue", sans-serif;
+  scroll-behavior: smooth ;
 }
 
 i {
@@ -24,14 +26,174 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Fjalla One", sans-serif;
 }
 
 p {
   font-family: "Heebo", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
+/* = - = - = HEADER = - = - = */
+
+/* = - = - = BANNER = - = - = */
+
+  .banner {
+    padding: 30px;
+    background-color: rgb(8, 13, 24);
+    color: whitesmoke;
+    border-bottom: 2px solid rgb(107, 106, 106);
+  }
+
+  .banner p.tags {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #2f3e88;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .banner h2.oque {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 1.5px;
+  }
+
+  .banner h2.oque span.realmente {
+    color: #000080;
+    font-weight: 600;
+  }
+
+  .banner h2.conc {
+    font-size: 1.3rem;
+    justify-content: center;
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .banner p.conceito {
+    margin: 4px 8px 20px 8px;
+    font-size: 0.8rem;
+  }
+
+  .banner h2.onde {
+    font-size: 1.3rem;
+    justify-content: center;
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .banner p.ocorrencia {
+    margin: 4px 8px 40px 8px;
+    font-size: 0.8rem;
+  }
+
+/* = - = - = CURIOSIDADES = - = - = */
+
+  .curiosid {
+    background-color: rgb(15, 23, 40);
+    color: whitesmoke;
+    padding: 25px 35px 30px 35px;
+  }
+
+  .curiosid h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    justify-content: center;
+    border: 2px solid #2f3e88;
+    background-color: #2f3e88;;
+    box-shadow: 6px 6px 6px black;
+  }
+
+  .curiosid ul li {
+    margin-bottom: 25px;
+  }
+
+  .curiosid ul li img {
+    margin-bottom: 10px;
+  }
+
+/* = - = - = MODERNO = - = - = */
+
+.moderno {
+  align-items: center;
+  text-align: center;
+  margin: 30px 15px;
+}
+
+  /* TÍTULO PRINCIPAL */
+  .moderno-div h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .moderno-div h2 span {
+    color: #00d8f6; 
+  }
+
+  /* PARÁGRAFO INTRODUTÓRIO */
+  .permuta-moderna {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 30px;
+  }
+
+  .moderno-div h3 {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+
+  .moderno-div h3 span {
+    color: #65d46e;
+  }
+
+  .moderno-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+/* = - = - = FOOTER = - = - = */
+
+  footer {
+    padding: 3vw 6vw;
+    border-top:solid 2px rgb(3, 102, 69);
+  }
+
+  footer h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+
+  }
+
+  footer a:hover {
+    border-bottom: 2px solid #000080;
+    color: #000080;
+  }
+
+  footer p {
+    padding: 20px 0;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
 /* MEDIA QUERY - DESKTOP */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
 
 }
