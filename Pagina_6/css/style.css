@@ -1,7 +1,8 @@
 /* === IMPORTAÇÃO DE FONTES */
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 /*
 Follow - font-family: "Fredoka", sans-serif;
 Medu - Oswald
@@ -12,40 +13,31 @@ Medu - Oswald
 html {
   font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
   font-family: "Epilogue", sans-serif;
-  background-image: linear-gradient(140deg, #1f1d3a, #000000, #1f1d3a);
-  color: white;
+  scroll-behavior: smooth;
 }
 
 i {
   font-family: "Jet Brains", monospace;
 }
-body p a:hover {
-  color: aquamarine;
-  border-bottom: 1px solid aquamarine;
-}
 
-h1 {
-  font-size: 2rem;
-  font-family: "Space Grotesk", sans-serif;
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-family: "Space Grotesk", sans-serif;
-}
-
-h3 {
-  font-size: 1.2rem;
-  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
 }
 
 p {
   font-family: "Heebo", sans-serif;
+  text-align: center;
 }
 
-main {
-  padding: 15px;
-}
+
 
 /*--------------------------------------Mobile----------------------------------------------*/
 
@@ -56,6 +48,7 @@ header {
   color: white;
   display: flex;
   align-items: center;
+  background-color: #000000;
   justify-content: space-between;
 }
 
@@ -142,25 +135,40 @@ div.desktop {
 }
 
 /*--------------BANNER------------------*/
+.banner {
+  padding: 30px;
+  background-color: rgb(8, 13, 24);
+  color: whitesmoke;
+  border-bottom: 2px solid rgb(107, 106, 106);
+}
 
 .banner h1 {
   font-size: 2rem;
+  padding: 60px 0px 15px 0;
   text-align: center;
-  padding: 20px 15px 20px 15px;
+  font-family: "Fjalla One", sans-serif;
 }
 
 .banner h1 span {
-  color: aquamarine;
+  color: #000080;
 }
 
 /*---------------MOTIFS--------------------------*/
+.motifs {
+  background-color: rgb(15, 23, 40);
+  border-bottom: 2px solid gray;
+  padding: 30px;
+  color: whitesmoke;
+}
+
 .motifs h2 {
   font-size: 1.5rem;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .motifs h2 span {
-  color: aquamarine;
+  color: #2f3e88;
 }
 
 .motifs p {
@@ -168,7 +176,8 @@ div.desktop {
 }
 
 .motifs p span {
-  color: aquamarine;
+  color: #2f3e88;
+  font-weight: bold;
 }
 
 .motifs ol {
@@ -176,60 +185,78 @@ div.desktop {
 }
 
 .motifs ol li {
-  background-color: rgb(51, 115, 94);
+  background-color: #f4f7fa;
+  color: black;
   border-radius: 10px;
-  padding: 8px;
+  align-items: center;
+  padding: 12px;
   margin-bottom: 30px;
 }
 
 .motifs ol li h3 {
+  font-weight: bold;
   padding: 3px 0 10px 0;
-  color: rgb(0, 255, 34);
+  color: #2f3e88;
+}
+
+.motifs ol li p {
+  text-align: left;
 }
 
 /*--------------------ACCESS--------------------------*/
+.access {
+  background-color: rgb(15, 23, 40);
+  border-bottom: 2px solid gray;
+  padding: 30px;
+  color: #f4f7fa;
+}
 
 .access h2 {
   font-size: 1.5rem;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .access h2 span {
-  color: aquamarine;
+  color: #2f3e88;
 }
 
 .access p {
   padding-bottom: 10px;
+  text-align: left;
+}
+
+.access p.deslocado {
+  text-align: center;
+}
+
+.access ul {
+  text-align: left;
 }
 
 .access ul li {
   padding: 7px 0;
 }
 
-.access ul li span.king {
-  color: rgb(255, 127, 249);
-}
-
-.access span.priest {
-  color: aquamarine;
-}
-
-.access span.military {
-  color: rgb(255, 127, 214);
-}
-
-.access span.scientist {
-  color: rgb(255, 221, 127);
+.access ul li span {
+  color: #2f3e88;
+  font-weight: bold;
 }
 
 /*---------------------MAINTECH----------------------------*/
+.mainTech {
+  padding: 30px;
+  background-color: whitesmoke;
+}
+
 .mainTech h2 {
   font-size: 1.5rem;
   padding-bottom: 15px;
+  text-align: center;
 }
 
 .mainTech p span {
-  color: aquamarine;
+  color: #000080;
 }
 
 .mainTech ol {
@@ -237,8 +264,9 @@ div.desktop {
 }
 
 .mainTech ol li {
+  color: #f4f7fa;
   padding: 10px 10px 25px 10px;
-  background-color: aquamarine;
+  background-color: rgb(47, 63, 98);
   margin: 10px 2px;
   border-radius: 10px;
 }
@@ -247,6 +275,12 @@ div.desktop {
   display: flex;
   align-items: center;
   gap: 30px;
+
+}
+
+.mainTech ol li div.tituloMainTech h3 {
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 .mainTech ol li div.tituloMainTech h3 {
@@ -254,28 +288,38 @@ div.desktop {
 }
 
 .mainTech ol li p span.I {
-  background-color: red;
+  color: #f4f7fa;
+  background-color: #000080;
   padding: 5px 8px;
+  border-radius: 10px;
 }
 
 .mainTech ol li p span.II {
-  background-color: red;
+  color: #f4f7fa;
+  background-color: #000080;
   padding: 5px 8px;
+  border-radius: 10px;
 }
 
 .mainTech ol li p span.III {
-  background-color: red;
+  color: #f4f7fa;
+  background-color: #000080;
   padding: 5px 8px;
+  border-radius: 10px;
 }
 
 .mainTech ol li p span.IV {
-  background-color: red;
+  color: #f4f7fa;
+  background-color: #000080;
   padding: 5px 8px;
+  border-radius: 10px;
 }
 
 .mainTech ol li p span.V {
-  background-color: red;
+  color: #f4f7fa;
+  background-color: #000080;
   padding: 5px 8px;
+  border-radius: 10px;
 }
 
 .mainTech ol li h3 {
@@ -285,7 +329,7 @@ div.desktop {
 /*---------------------------FOOTER---------------------*/
 footer {
   padding: 3vw 6vw;
-  border-top:solid 2px rgb(3, 102, 69);
+  border-top: solid 2px rgb(3, 102, 69);
 }
 
 footer h2 {
@@ -315,10 +359,6 @@ footer p {
 /* MEDIA QUERY ----------------------------------waaaa---------------------------------- DESKTOP */
 
 @media screen and (min-width: 600px) {
-  main {
-    padding: 90px 200px 90px 200px;
-    margin-top: 90px;
-  }
 
   main p {
     font-size: 0.7rem;
@@ -361,8 +401,9 @@ footer p {
   }
 
   header button:hover {
+    color: #2f3e88;
     background: none;
-    border: solid 1px aquamarine;
+    border: solid 1px #2f3e88;
     transition: ease 1s;
   }
 
@@ -399,7 +440,16 @@ footer p {
     font-size: 1.4rem;
   }
 
+  .banner {
+    padding: 90px 12%;
+    padding-top: 200px;
+  }
+
   /*--------------------MOTIFS----------------------*/
+  .motifs {
+    padding: 70px 10%;
+  }
+
   .motifs h2 {
     font-size: 1.4rem;
     text-align: center;
@@ -428,14 +478,18 @@ footer p {
   }
 
   /*--------------------access-----------------------------*/
+  .access {
+      padding: 70px 10%;
+  }
   .access h2 {
     font-size: 1.4rem;
     padding-bottom: 50px;
     text-align: center;
   }
-
+  .access ul {
+    margin: 0 20px 0 20px;
+  }
   .access ul li {
-    background-color: blue;
     border-radius: 10px;
     padding: 15px;
     margin-top: 20px;
@@ -448,6 +502,9 @@ footer p {
   }
 
   /*------------------mainTech------------------------------------*/
+  .mainTech {
+      padding: 80px 10%;
+  }
   .mainTech h2 {
     font-size: 1.4rem;
     padding-bottom: 50px;
@@ -455,8 +512,7 @@ footer p {
   }
 
   .mainTech ol li {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 15px;
   }
 
   .mainTech ol li div {
@@ -473,9 +529,11 @@ footer p {
     display: flex;
     justify-content: space-between;
   }
+
   div.rodape a {
     font-size: 0.6rem;
   }
+
   footer p {
     margin: 3vw 1.4vw;
     font-size: 0.4rem;
