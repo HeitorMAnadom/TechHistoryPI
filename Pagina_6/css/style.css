@@ -184,7 +184,7 @@ div.desktop {
 }
 
 .banner h1 span {
-  color: #000080;
+  color: #3975a8;
 }
 
 /*---------------MOTIFS--------------------------*/
@@ -202,7 +202,8 @@ div.desktop {
 }
 
 .motifs h2 span {
-  color: #2f3e88;
+  color: #3975a8;
+  ;
 }
 
 .motifs p {
@@ -210,7 +211,7 @@ div.desktop {
 }
 
 .motifs p span {
-  color: #2f3e88;
+  color: #3975a8;
   font-weight: bold;
 }
 
@@ -360,9 +361,10 @@ div.desktop {
   padding-top: 10px;
 }
 
-/*---------------------------FOOTER---------------------*/
+/*---------------------------FOOTER----------copie daqui-----------*/
+
 footer {
-  padding: 3vw 6vw;
+  padding: 0 6vw 3vw 6vw;
   border-top: solid 2px rgb(3, 102, 69);
 }
 
@@ -371,26 +373,36 @@ footer div.doubles {
   gap: 12vw;
   padding-bottom: 30px;
 }
+
 footer div ul li {
   margin-top: 20px;
   align-items: center;
 }
+
 footer div ul.fontes li {
   display: flex;
   align-items: center;
 }
+
 footer div ul.redes li {
   display: flex;
   flex-direction: row;
 }
+
 footer div ul li img {
   width: auto;
   height: 25px;
   padding-right: 5px;
   border-radius: 10px;
 }
-footer div ul li a{
+
+footer div ul li a {
   padding: 2px;
+}
+
+footer a:hover {
+  color: #000080;
+  border-bottom: #000080;
 }
 
 
@@ -416,7 +428,7 @@ footer p {
 
 
 
-
+/*--------------ate aqui-------*/
 
 
 /* MEDIA QUERY ----------------------------------waaaa---------------------------------- DESKTOP */
@@ -549,9 +561,9 @@ footer p {
     border-radius: 5px;
   }
 
-  /*---------------------------FOOTER---------------------*/
+  /*---------------------------FOOTER-------copie aq tb--------------*/
   div.rodape {
-    margin: 3vw 1.4vw;
+    margin: 0 1.4vw 3vw 1.4vw;
     display: flex;
     justify-content: space-between;
   }
@@ -559,6 +571,7 @@ footer p {
   div.rodape a {
     font-size: 0.6rem;
   }
+
   div.rodape a:hover {
     color: #000080;
     border-bottom: #000080 solid 2px;
@@ -566,7 +579,7 @@ footer p {
 
 
   footer p {
-    margin: 3vw 1.4vw;
+    margin: 2vw 1.4vw;
     font-size: 0.4rem;
     text-align: center;
     padding: 50px;
