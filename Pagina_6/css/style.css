@@ -252,7 +252,7 @@ div.desktop {
 }
 
 .access h2 span {
-  color: #2f3e88;
+  color: #3975a8;
 }
 
 .access p {
@@ -273,7 +273,7 @@ div.desktop {
 }
 
 .access ul li span {
-  color: #2f3e88;
+  color: #3975a8;
   font-weight: bold;
 }
 
@@ -366,12 +366,41 @@ footer {
   border-top: solid 2px rgb(3, 102, 69);
 }
 
+footer div.doubles {
+  display: flex;
+  gap: 12vw;
+  padding-bottom: 30px;
+}
+footer div ul li {
+  margin-top: 20px;
+  align-items: center;
+}
+footer div ul.fontes li {
+  display: flex;
+  align-items: center;
+}
+footer div ul.redes li {
+  display: flex;
+  flex-direction: row;
+}
+footer div ul li img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+footer div ul li a{
+  padding: 2px;
+}
+
+
 footer h2 {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 20px 0 10px 0;
 
 }
+
 
 footer a:hover {
   border-bottom: 2px solid white;
@@ -416,12 +445,14 @@ footer p {
     color: white;
     justify-content: space-between;
   }
+
   header div nav a img {
     padding-right: 20px;
     width: auto;
     height: 100px;
   }
-  header div nav ul{
+
+  header div nav ul {
     display: flex;
     justify-content: space-between;
   }
@@ -528,6 +559,11 @@ footer p {
   div.rodape a {
     font-size: 0.6rem;
   }
+  div.rodape a:hover {
+    color: #000080;
+    border-bottom: #000080 solid 2px;
+  }
+
 
   footer p {
     margin: 3vw 1.4vw;
