@@ -182,7 +182,7 @@ header img {
           }
         </script>
       </div>
-      <img class="mobile" src="Pagina_1/source/logo_cortada.png" alt="" />
+      <img class="mobile" src="../Pagina_1/source/logo_cortada.png" alt="" />
     </header>
 
 
