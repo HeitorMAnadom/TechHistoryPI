@@ -142,17 +142,17 @@ header img {
  <header>
       <div class="desktop">
         <nav>
-          <a href=""><img src="Pagina_1/source/logo_cortada.png" alt="" /></a>
+          <a href=""><img src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Pagina_1/sobre.html">Sobre</a></li>
-            <li><a href="Pagina_2/evolucao.html">Evolução</a></li>
-            <li><a href="Pagina_3/circulacao.html">Circulação</a></li>
-            <li><a href="Pagina_4/impactos.html">Impactos</a></li>
-            <li><a href="Pagina_5/costumes.html">Curiosidades</a></li>
-            <li><a href="Pagina_6/antiguidades.html">Antiguidades</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+            <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+            <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+            <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+            <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
+            <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
             <li>
-              <a class="quiz-button" href="Quiz/index.html">Jogue Quiz!</a>
+              <a class="quiz-button" href="../Quiz/index.html">Jogue Quiz!</a>
             </li>
           </ul>
         </nav>
@@ -162,14 +162,14 @@ header img {
         <nav class="sidebar" id="sidebar">
           <button class="close-btn" onclick="toggleMenu()">&times;</button>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Pagina_1/sobre.html">Sobre</a></li>
-            <li><a href="Pagina_2/evolucao.html">Evolução</a></li>
-            <li><a href="Pagina_3/circulacao.html">Circulação</a></li>
-            <li><a href="Pagina_4/impactos.html">Impactos</a></li>
-            <li><a href="Pagina_5/costumes.html">Curiosidades</a></li>
-            <li><a href="Pagina_6/antiguidades.html">Antiguidades</a></li>
-            <li><a href="Quiz/index.html">Jogue Quiz!</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+            <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+            <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+            <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+            <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
+            <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+            <li><a href="../Quiz/index.html">Jogue Quiz!</a></li>
           </ul>
         </nav>
         <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
