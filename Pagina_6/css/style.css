@@ -53,9 +53,11 @@ header {
 header a img {
   height: 15vw;
 }
+
 header div.desktop {
   display: none;
 }
+
 header div.mobile {
   display: flex;
   align-items: center;
@@ -406,9 +408,10 @@ footer p {
   }
 
   /*--------------HEADER---------PODE COPIAR TD-----*/
-   header div.mobile {
+  header div.mobile {
     display: none;
   }
+
   header div.desktop {
     display: block;
   }
@@ -429,6 +432,16 @@ footer p {
     height: 5vw;
     padding: 0vw 2vw;
   }
+  header li a {
+    font-weight: bold;
+  }
+  header li a:hover {
+    color: #3975a8;
+    border-bottom: #3975a8 2px solid;
+    font-weight: bold;
+  
+  }
+
 
   header a.quiz-button {
     background-color: #1f1d3a;
