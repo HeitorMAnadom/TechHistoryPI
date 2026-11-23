@@ -293,9 +293,47 @@ header div.mobile {
   margin: 0;
 }
 footer {
-  padding: 3vw 6vw;
-  border-top:solid 2px rgb(3, 102, 69);
+  padding: 0 6vw 3vw 6vw;
+  border-top: solid 2px rgb(3, 102, 69);
 }
+
+footer div.doubles {
+  display: flex;
+  gap: 12vw;
+  padding-bottom: 30px;
+}
+
+footer div ul li {
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer div ul.fontes li {
+  display: flex;
+  align-items: center;
+}
+
+footer div ul.redes li {
+  display: flex;
+  flex-direction: row;
+}
+
+footer div ul li img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+footer div ul li a {
+  padding: 2px;
+}
+
+footer a:hover {
+  color: #000080;
+  border-bottom: #000080;
+}
+
 
 footer h2 {
   font-size: 1.2rem;
@@ -304,9 +342,10 @@ footer h2 {
 
 }
 
+
 footer a:hover {
-  border-bottom: 2px solid #000080;
-  color: #000080;
+  border-bottom: 2px solid white;
+  color: #f0ede5;
 }
 
 footer p {
@@ -314,6 +353,12 @@ footer p {
   font-size: 0.7rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+
+/*--------------ate aqui-------*/
+
 
 
 
