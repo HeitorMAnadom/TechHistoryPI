@@ -271,7 +271,7 @@ footer p {
     margin: 3vw 2vw;
   }
 
-  section.principal div.mona h3 {
+  section.principal div.mona h2 {
     font-size: 1rem;
     padding: 1vw;
   }
@@ -286,7 +286,7 @@ footer p {
     color: aquamarine;
   }
 
-  section.principal div.mona button a {
+  section.principal div.mona a {
     padding: 1vw;
     background-image: linear-gradient(
       90deg,
@@ -359,13 +359,13 @@ footer p {
     padding-right: 4vw;
   }
 
-  header button {
+  header ul li a span {
     background-color: #1f1d3a;
     padding: 1.2vw;
     border-radius: 2vw;
   }
 
-  header button:hover {
+  header a span:hover {
     background: none;
     border: solid 1px aquamarine;
     transition: ease 1s;

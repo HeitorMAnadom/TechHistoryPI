@@ -238,7 +238,7 @@ section.rotas h1 span {
   padding-bottom: 6vw;
 }
 
-.frentes h3 {
+.frentes strong {
   font-size: 1.2rem;
   border-bottom: solid 2px gray;
 }
@@ -446,13 +446,13 @@ footer p {
     padding-right: 4vw;
   }
 
-  header button {
+  header a span {
     background-color: #1f1d3a;
     padding: 1.2vw;
     border-radius: 2vw;
   }
 
-  header button:hover {
+  header a span:hover {
     background: none;
     border: solid 1px aquamarine;
     transition: ease 1s;
@@ -571,7 +571,7 @@ section.rotas h1 span {
   padding: 3vw 6vw;
 }
 
-.frentes h3 {
+.frentes strong {
   font-size: 1rem;
   border-bottom: solid 2px gray;
 }
