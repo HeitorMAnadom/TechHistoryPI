@@ -35,6 +35,97 @@ p {
   text-align: center;
 }
 
+header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a img {
+  height: 15vw;
+}
+
+header div.desktop {
+  display: none;
+}
+
+header div.mobile {
+  display: flex;
+  align-items: center;
+  gap: 45vw;
+}
+
+.menu {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 175px;
+  height: 120%;
+  background-image: linear-gradient(to right, #000000, #1f1d3adc);
+  padding-top: 60px;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  font-size: 15px;
+  border-right: solid 2px #2f3e88;
+  border-radius: 10px;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar ul li a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: #222;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.overlay.open {
+  display: block;
+}
+
+
 /* banner */
 .banner {
   padding: 30px;
@@ -229,6 +320,74 @@ footer p {
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 900px) {
+
+
+  header div.mobile {
+    display: none;
+  }
+
+  header div.desktop {
+    display: block;
+  }
+
+
+  header {
+    display: flex;
+    background-color: #000000af;
+    font-size: 0.4rem;
+    padding: 0.5vw;
+    position: fixed;
+    top: 0vw;
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  header a img {
+    height: 5vw;
+    padding: 0vw 2vw;
+  }
+  header li a {
+    font-weight: bold;
+  }
+  header li a:hover {
+    color: #3975a8;
+    border-bottom: #3975a8 2px solid;
+    font-weight: bold;
+  
+  }
+
+
+  header a.quiz-button {
+    background-color: #1f1d3a;
+    padding: 1.2vw;
+    border-radius: 2vw;
+  }
+
+  header a.quiz-button:hover {
+    background: none;
+    border: solid 1px white;
+    transition: ease 1s;
+  }
+
+  header div.desktop nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop ul {
+    display: flex;
+    gap: 2vw;
+    position: fixed;
+    right: 3vw;
+  }
+
+  div.mobile {
+    display: none;
+  }
 
 
   /* Banner - Desktop */
