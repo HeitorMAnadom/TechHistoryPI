@@ -135,7 +135,9 @@ header div.mobile {
 /*--------------BANNER------------------*/
 .banner {
   padding: 30px;
-  background-color: rgb(8, 13, 24);
+  background-image: url(../src/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: whitesmoke;
   border-bottom: 2px solid rgb(107, 106, 106);
 }
@@ -149,6 +151,7 @@ header div.mobile {
 
 .banner h1 span {
   color: #3975a8;
+  font-weight: bold;
 }
 
 /*---------------MOTIFS--------------------------*/
@@ -235,11 +238,17 @@ header div.mobile {
 
 .access ul li {
   padding: 7px 0;
+  display: flex;
 }
 
 .access ul li span {
   color: #3975a8;
   font-weight: bold;
+}
+.access ul li img {
+  width: auto;
+  height: 100px;
+  color: #3975a8;
 }
 
 /*---------------------MAINTECH----------------------------*/
@@ -432,14 +441,16 @@ footer p {
     height: 5vw;
     padding: 0vw 2vw;
   }
+
   header li a {
     font-weight: bold;
   }
+
   header li a:hover {
     color: #3975a8;
     border-bottom: #3975a8 2px solid;
     font-weight: bold;
-  
+
   }
 
 
