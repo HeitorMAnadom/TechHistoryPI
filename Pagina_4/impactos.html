@@ -1,110 +1,132 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Impactos</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1>
-        <a href="../Pagina_1/sobre.html">
-          <img src="source/logo_cortada.png" alt="Logo: Tech&History" />
-        </a>
-      </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impactos</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="desktop">
       <nav>
+        <a href="../index.html"><img src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
         <ul>
-          <li><a href="../Pagina_1/sobre.html" aria-current="page">Povos</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
           <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
           <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
           <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
-          <li><a href="../Pagina_5/costumes.html">Costumes</a></li>
+          <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
           <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
-          <li><p class="botao"><a href="../PaginaQuiz/quiz.html">Jogue Quiz!</a></p></li>
+          <li>
+            <a class="quiz-button" href="../Quiz/index.html">Jogue Quiz!</a>
+          </li>
         </ul>
       </nav>
-      
-    </header>
-    <main>
-      <section class="rotas">
-        <h2>A Tecnologia circula em <span>circuitos</span></h2>
-        <div class="texto">
-          <div class="paragrafo">
-            <p>
-              O alto comércio de tecnologia estimula a economia, aumenta o
-              acesso à inovação e cria novas oportunidades, mas também pode
-              provocar mais lixo eletrônico, consumo de recursos naturais,
-              impactos ambientais e desigualdade de acesso.
-            </p>
-          </div>
-          <div class="imagem">
-            <p>
-              <img src="source/carrinho.jpg" alt="Comércio de Tecnologia" />
-            </p>
-          </div>
-        </div>
-        <div class="botoes">
+    </div>
+    <div class="mobile">
+      <div class="menuzao">
+        <button class="menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="sidebar" id="sidebar">
+          <button class="close-btn" onclick="toggleMenu()">&times;</button>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+            <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+            <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+            <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+            <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
+            <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+            <li><a href="../Quiz/index.html">Jogue Quiz!</a></li>
+          </ul>
+        </nav>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+        <script>
+          function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            const overlay = document.getElementById("overlay");
+            sidebar.classList.toggle("open");
+            overlay.classList.toggle("open");
+          }
+        </script>
+      </div>
+      <a href="../index.html"><img class="mobile" src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="rotas">
+      <h2>A Tecnologia circula em <span>circuitos</span></h2>
+      <div class="texto">
+        <div class="paragrafo">
           <p>
-            <a
-              href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/"
-              >Ver impactos</a
-            >
-          </p>
-          <p class="branco">
-            <a href="https://youtu.be/atCbw3HOPDY?si=XHBUQNzpDGvC0z5E&t=94"
-              >Assistir</a
-            >
+            O alto comércio de tecnologia estimula a economia, aumenta o
+            acesso à inovação e cria novas oportunidades, mas também pode
+            provocar mais lixo eletrônico, consumo de recursos naturais,
+            impactos ambientais e desigualdade de acesso.
           </p>
         </div>
-      </section>
-      <section class="container">
-        <ul>
-          <li class="verde">
-            <h3>US$ 5.3T</h3>
-            <p><span>Mercado global de Tech</span></p>
-          </li>
-          <li class="vermelho">
-            <h3>62 Mt</h3>
-            <p><span>Lixo eletrônico / Ano</span></p>
-          </li>
-          <li class="yellow">
-            <h3>22%</h3>
-            <p><span>Reciclado formalmente</span></p>
-          </li>
-          <li class="azul">
-            <h3>3.2B</h3>
-            <p><span>Dispositivos ativos</span></p>
-          </li>
-        </ul>
-      </section>
-      <section class="frentes">
-        <h2>Quatro <span>frentes</span> de impacto.</h2>
+        <div class="imagem">
+          <p>
+            <img src="source/carrinho.jpg" alt="Comércio de Tecnologia" />
+          </p>
+        </div>
+      </div>
+      <div class="botoes">
         <p>
-          Cada card representa uma dimensão dos efeitos da circulação
-          tecnológica.
+          <a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/">Ver impactos</a>
         </p>
-        <div class="tudo">
+        <p class="branco">
+          <a href="https://youtu.be/atCbw3HOPDY?si=XHBUQNzpDGvC0z5E&t=94">Assistir</a>
+        </p>
+      </div>
+    </section>
+    <section class="container">
+      <ul>
+        <li class="verde">
+          <h3>US$ 5.3T</h3>
+          <p><span>Mercado global de Tech</span></p>
+        </li>
+        <li class="vermelho">
+          <h3>62 Mt</h3>
+          <p><span>Lixo eletrônico / Ano</span></p>
+        </li>
+        <li class="yellow">
+          <h3>22%</h3>
+          <p><span>Reciclado formalmente</span></p>
+        </li>
+        <li class="azul">
+          <h3>3.2B</h3>
+          <p><span>Dispositivos ativos</span></p>
+        </li>
+      </ul>
+    </section>
+    <section class="frentes">
+      <h2>Quatro <span>frentes</span> de impacto.</h2>
+      <p>
+        Cada card representa uma dimensão dos efeitos da circulação
+        tecnológica.
+      </p>
+      <div class="tudo">
         <div class="container1">
           <ul>
             <li class="green">
               <h3>AMBIENTAL</h3>
               <p>
-                <span
-                  >Mineração de terras raras, poluição de solos, descarte
-                  irregular.</span
-                >
+                <span>Mineração de terras raras, poluição de solos, descarte
+                  irregular.</span>
               </p>
             </li>
             <li class="red">
               <h3>SOCIAL</h3>
               <p>
-                <span
-                  >Trabalho análogo à escravidão em cadeias de suprimento
-                  globais.</span
-                >
+                <span>Trabalho análogo à escravidão em cadeias de suprimento
+                  globais.</span>
               </p>
             </li>
           </ul>
@@ -115,36 +137,32 @@
             <li class="amarelo">
               <h3>ECONÔMICO</h3>
               <p>
-                <span
-                  >Dependência tecnológica, assimetrias Norte-Sul,
-                  monopólios.</span
-                >
+                <span>Dependência tecnológica, assimetrias Norte-Sul,
+                  monopólios.</span>
               </p>
             </li>
             <li class="blue">
               <h3>CULTURAL</h3>
               <p>
-                <span
-                  >Homogeneização, colonialismo de dados, obsolescência
-                  simbólica.</span
-                >
+                <span>Homogeneização, colonialismo de dados, obsolescência
+                  simbólica.</span>
               </p>
             </li>
           </ul>
         </div>
-        </div>
-      </section>
-      <section class="adress">
-        <div>
-          <h2>De onde <span>vem?</span> Para onde <span>vai?</span></h2>
-        </div>
-        <div class="lista">
-          <p>
-            Um smartphone atravessa em média 4 continentes antes de chegar à sua
-            mão, e outros 2 depois de descartado.
-          </p>
-          <div class="janela">
-            <h3>Processo</h3>
+      </div>
+    </section>
+    <section class="adress">
+      <div>
+        <h2>De onde <span>vem?</span> Para onde <span>vai?</span></h2>
+      </div>
+      <div class="lista">
+        <p>
+          Um smartphone atravessa em média 4 continentes antes de chegar à sua
+          mão, e outros 2 depois de descartado.
+        </p>
+        <div class="janela">
+          <h3>Processo</h3>
           <ul>
             <li class="um">
               <p><span>01</span> Extração · RD Congo, Chile, Austrália</p>
@@ -162,97 +180,113 @@
               <p><span>05</span> Descarte · Gana, Nigéria, Paquistão</p>
             </li>
           </ul>
-          </div>
         </div>
-      </section>
-      
-      <section class="ciclo">
-        <h2>O ciclo (que quase nunca fecha).</h2>
-        <div class="lista-ciclo">
-          <ul>
-            <li class="zero1">
-              <h3>Passo 01</h3>
-              <p>Extrair</p>
-            </li>
-            <li class="zero2">
-              <h3>Passo 02</h3>
-              <p>Produzir</p>
-            </li>
-            <li class="zero3">
-              <h3>Passo 03</h3>
-              <p>Distribuir</p>
-            </li>
-            <li class="zero4">
-              <h3>Passo 04</h3>
-              <p>Consumir</p>
-            </li>
-            <li class="zero5">
-              <h3>Passo 05</h3>
-              <p>Descartar</p>
-            </li>
-            <li class="zero6">
-              <h3>Passo 06</h3>
-              <p>Reciclar?</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="historias">
-        <h2><span>Histórias</span> que circulam junto</h2>
-        <div class="final">
-          <ul>
-            <li class="fabrica">
-              <img src="source/factoryicon 1.svg" alt="Ícone de Fábrica Ilustrativo">
-              <p><span>GANA</span></p>
-              <h3>Agbogbloshie</h3>
-              <p>O maior 'cemitério eletrônico' do mundo revela a rota reversa do consumo global.</p>
-            </li>
-            <li class="martelo">
-              <img src="source/hammericon 1.svg" alt="Ícone de Martelo Ilustrativo">
-              <p><span>RD CONGO</span></p>
-              <h3>Cobalto Azul</h3>
-              <p>70% do cobalto mundial atravessa mãos infantis antes das nossas baterias.</p>
-            </li>
-            <li class="chave">
-              <img src="source/keyicon 1.svg" alt="Ícone de Chave Ilustrativo">
-              <p><span>BRASIL</span></p>
-              <h3>Silício SP</h3>
-              <p>O sonho da montagem nacional entre incentivos, importações e obsolescência.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="rodape">
+      </div>
+    </section>
+
+    <section class="ciclo">
+      <h2>O ciclo (que quase nunca fecha).</h2>
+      <div class="lista-ciclo">
+        <ul>
+          <li class="zero1">
+            <h3>Passo 01</h3>
+            <p>Extrair</p>
+          </li>
+          <li class="zero2">
+            <h3>Passo 02</h3>
+            <p>Produzir</p>
+          </li>
+          <li class="zero3">
+            <h3>Passo 03</h3>
+            <p>Distribuir</p>
+          </li>
+          <li class="zero4">
+            <h3>Passo 04</h3>
+            <p>Consumir</p>
+          </li>
+          <li class="zero5">
+            <h3>Passo 05</h3>
+            <p>Descartar</p>
+          </li>
+          <li class="zero6">
+            <h3>Passo 06</h3>
+            <p>Reciclar?</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="historias">
+      <h2><span>Histórias</span> que circulam junto</h2>
+      <div class="final">
+        <ul>
+          <li class="fabrica">
+            <img src="source/factoryicon 1.svg" alt="Ícone de Fábrica Ilustrativo">
+            <p><span>GANA</span></p>
+            <h3>Agbogbloshie</h3>
+            <p>O maior 'cemitério eletrônico' do mundo revela a rota reversa do consumo global.</p>
+          </li>
+          <li class="martelo">
+            <img src="source/hammericon 1.svg" alt="Ícone de Martelo Ilustrativo">
+            <p><span>RD CONGO</span></p>
+            <h3>Cobalto Azul</h3>
+            <p>70% do cobalto mundial atravessa mãos infantis antes das nossas baterias.</p>
+          </li>
+          <li class="chave">
+            <img src="source/keyicon 1.svg" alt="Ícone de Chave Ilustrativo">
+            <p><span>BRASIL</span></p>
+            <h3>Silício SP</h3>
+            <p>O sonho da montagem nacional entre incentivos, importações e obsolescência.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="rodape">
+      <div class="doubles">
         <ul class="mapa">
-          <h2>Mapa</h2>
-          <li><a href="../Pagina_1/home.html">Home</a></li>
-          <li><a href="../Pagina_1/sobre.html">Evolução</a></li>
-          <li><a href="../Pagina_2/pag_2PI/pag_2PI/evolucao.html">Circulação</a></li>
+          <li>
+            <h2>Mapa</h2>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+          <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+          <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
           <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
-          <li><a href="../Pagina_5/evolucao.html">Costumes</a></li>
+          <li><a href="../Pagina_5/costumes.html">Costumes</a></li>
           <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
         </ul>
         <ul class="redes">
-          <h2>Redes</h2>
-          <li><a href="https://www.instagram.com/tech_and_history?stkn=Y3F2dmEzdG81b2Vv">Instagram</a></li>
-          <li><a href="https://github.com/vicenzoalvesifc-sudo/Com-rcioe-circula-o-de-tecnologia----Civiliza-es">Github</a></li>
-        </ul>
-        <ul class="fontes">
-          <h2>Fontes</h2>
-          <li><a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/">HostGator</a></li>
-          <li><a href="https://e-safer.com.br/evolucao-da-tecnologia-durante-as-decadas/">e-Safer</a></li>
-          <li><a href="https://www.britannica.com/technology/technology">Encyclopaedia Britannica</a></li>
+          <li>
+            <h2>Redes</h2>
+          </li>
+          <li><a href="https://www.instagram.com/tech_and_history?stkn=Y3F2dmEzdG81b2Vv"><img
+                src="../Pagina_6/src/logoInsta.png" alt="">Instagram</a></li>
+          <li><a href="https://github.com/vicenzoalvesifc-sudo/Com-rcioe-circula-o-de-tecnologia----Civiliza-es"><img
+                src="../Pagina_6/src/gitLogo.png" alt="">Github</a>
+          </li>
         </ul>
       </div>
-      <p>
-        <span>© 2026 Tech&History</span>. Desenvolvido por: Gabriel, Andrius, Matheus Mello,
-        Matheus Rafael, Vicenzo e Heitor
-      </p>
-    </footer>
+      <ul class="fontes">
+        <li>
+          <h2>Fontes</h2>
+        </li>
+        <li><a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/"><img
+              src="../Pagina_6/src/logoHostgator.png" alt="">HostGator</a></li>
+        <li><a href="https://e-safer.com.br/evolucao-da-tecnologia-durante-as-decadas/"><img
+              src="../Pagina_6/src/eSaferLogo.jpeg" alt="">e-Safer</a></li>
+        <li><a href="https://www.britannica.com/technology/technology"><img src="../Pagina_6/src/encBritLogo.jpeg"
+              alt="">Encyclopaedia Britannica</a></li>
+      </ul>
+    </div>
+    <p>
+      <span>© 2026 Tech&History</span>. Desenvolvido por: Gabriel, Andrius, Matheus Mello,
+      Matheus Rafael, Vicenzo e Heitor. Todos os direitos reservados
+    </p>
+  </footer>
 
-    
+</body>
 
-  </body>
 </html>
