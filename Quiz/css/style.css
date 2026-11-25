@@ -1,202 +1,325 @@
 /* === IMPORTAÇÃO DE FONTES */
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-/* === FORMATAÇÃO GERAL === */
+/*
+Follow - font-family: "Fredoka", sans-serif;
+Medu - Oswald
+*/
+/* ==========================*/
 
+/*---------------Geral------------*/
 html {
   font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
   font-family: "Epilogue", sans-serif;
+  scroll-behavior: smooth;
 }
-h1 {
-  font-family: "Space Grotesk", sans-serif;
+
+i {
+  font-family: "Jet Brains", monospace;
 }
+
+h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", sans-serif;
-  color: white;
+  font-family: "Fjalla One", sans-serif;
 }
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-weight: bold;
+}
+
 p {
   font-family: "Heebo", sans-serif;
+  text-align: center;
+  font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+}
+
+
+
+/*--------------------------------------Mobile----------------------------------------------*/
+
+/* HEADER */
+
+header div.mobile {
+  display: block;
+}
+header div.desktop {
+  display: none;
+}
+header {
+  background-color: #000000;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-body {
-    background-color: rgb(66, 66, 66);
+header a img {
+  height: 15vw;
 }
 
-/* MEDIA QUERY - DESKTOP */
 
+
+header div.mobile {
+  display: flex;
+  align-items: center;
+  gap: 45vw;
+}
+
+.menu {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 175px;
+  height: 120%;
+  background-image: linear-gradient(to right, #000000, #1f1d3adc);
+  padding-top: 60px;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  font-size: 15px;
+  border-right: solid 2px #2f3e88;
+  border-radius: 10px;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar ul li a {
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: #222;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.overlay.open {
+  display: block;
+}
+
+
+/*------------------------------------------------------------------*/
+
+main {
+   padding: 90px 12%;
+}
+
+
+
+
+
+/*---------------------------FOOTER----------copie daqui-----------*/
+
+footer {
+  padding: 0 6vw 3vw 6vw;
+  border-top: solid 2px rgb(3, 102, 69);
+}
+
+footer div.doubles {
+  display: flex;
+  gap: 12vw;
+  padding-bottom: 30px;
+}
+
+footer div ul li {
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer div ul.fontes li {
+  display: flex;
+  align-items: center;
+}
+
+footer div ul.redes li {
+  display: flex;
+  flex-direction: row;
+}
+
+footer div ul li img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+footer div ul li a {
+  padding: 2px;
+}
+
+footer a:hover {
+  color: #000080;
+  border-bottom: #000080;
+}
+
+
+footer h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+
+}
+
+
+footer a:hover {
+  border-bottom: 2px solid white;
+  color: #f0ede5;
+}
+
+footer p {
+  padding: 20px 0;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*--------------ate aqui-------*/
 @media screen and (min-width: 600px) {
-  main {
-    background-color: rgb(66, 66, 66);
-    margin: 0;
-    padding: 0;
-    display: flow-root;
+
+  main p {
+    font-size: 0.7rem;
   }
 
-  /* === HEADER === */
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 7vw 0 0;
-    align-items: center;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 90px;
-    padding: 0 7vw;
-    margin: 0;
-
-    box-sizing: border-box;
-    background-color: #e8f1f8;
+  main h2 {
+    padding-bottom: 20px;
   }
 
-  header h1 {
-    margin: 0;
-    padding: 0;
-    line-height: 0;
+  /*--------------HEADER---------PODE COPIAR TD-----*/
+  header div.mobile {
+    display: none;
   }
 
-  header h1 img {
+  header div.desktop {
     display: block;
-    width: 220px;
-    height: auto;
   }
 
-  nav ul {
-    display: flex;
-    align-items: center;
-    gap: 3vw;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul li {
-    font-size: 0.4rem;
-    margin: 0;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
 
   header {
-    width: 100%;
-    height: 80px;
-
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 7vw;
-    margin: 0;
-
-    box-sizing: border-box;
-
     background-color: #000000;
-  }
-
-  header h1 {
-    margin: 0;
-    padding: 0;
-
-    /* Corrige o espaço transparente da imagem da logo */
-    transform: translateX(-2.5vw);
-
-    line-height: 0;
-  }
-
-  header h1 img {
-    display: block;
-    width: 220px;
-    height: auto;
-  }
-
-  nav {
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul {
-    display: flex;
-    align-items: center;
-
-    margin: 0;
-    padding: 0;
-
-    gap: 3vw;
-  }
-
-  nav ul li {
-    margin: 0;
-    padding: 0;
-    color: #e2e8f0;
-
     font-size: 0.4rem;
-    font-weight: 600;
-    white-space: nowrap;
+    padding: 0.5vw;
+    position: fixed;
+    top: 0vw;
+    z-index: 10;
+    width: 100%;
   }
 
-  nav ul li p a {
-    background: linear-gradient(to right, #d86bfd, #00bbff);
-    padding: 6px 16px;
-    border-radius: 30px;
-    vertical-align: middle;
-    background-size: 400% 400%;
-    animation: animarbotao 10s ease infinite;
-    color: #e2e8f0;
-    padding: 12px 16px;
-    border-radius: 10px;
-    white-space: nowrap;
+  header a img {
+    height: 5vw;
+    padding: 0vw 2vw;
   }
 
-
-/* === FOOTER === */
-
-  footer div {
-    display: flex;
-    gap: 29vw;
-    justify-content: left;
-    margin-top: 2vw;
-    margin-left: 7.51vw;
-    padding-bottom: 1vw;
-  }
-  footer div ul {
-    border-right: gray solid 2px;
-    padding: 1px 3vw 1px 0;
-    text-align: left;
-  }
-  footer h2 {
+  header li a {
     font-weight: bold;
-    font-size: 0.5rem;
   }
-  footer ul li a {
-    color: white;
-    font-size: 0.5rem;
+
+  header li a:hover {
+    color: #3975a8;
+    border-bottom: #3975a8 2px solid;
+    font-weight: bold;
+
   }
-  footer div p {
-    color: white;
+
+
+  header a.quiz-button {
+    background-color: #1f1d3a;
+    padding: 1.2vw;
+    border-radius: 2vw;
   }
-  footer p span {
-    color: rgb(110, 30, 134);
+
+  header a.quiz-button:hover {
+    background: none;
+    border: solid 1px white;
+    transition: ease 1s;
   }
-  footer p {
-    font-size: 0.5rem;
-    padding: 4vw 2vw 2vw 6vw;
-    margin: 0 30vw;
-    text-align: center;
+
+  header div.desktop nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .desktop ul {
+    display: flex;
+    gap: 2vw;
+    position: fixed;
+    right: 3vw;
+  }
+
+  div.mobile {
+    display: none;
+  }
+
+  /*---------------------------FOOTER-------copie aq tb--------------*/
+  div.rodape {
+    margin: 0 1.4vw 3vw 1.4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.rodape a {
+    font-size: 0.6rem;
+  }
+
+  div.rodape a:hover {
+    color: #000080;
+    border-bottom: #000080 solid 2px;
+  }
+
+
+  footer p {
+    margin: 2vw 1.4vw;
+    font-size: 0.4rem;
+    text-align: center;
+    padding: 50px;
   }
 
 }

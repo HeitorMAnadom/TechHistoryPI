@@ -1,153 +1,188 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Quiz - v2.0</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>
-        <a href="../../index.html"
-          ><img src="source/logo_techandhistory.png" alt="Logo: Tech&History"
-        /></a>
-      </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz - v2.0</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header>
+
+    <div class="desktop">
       <nav>
+        <a href="../index.html"><img src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
         <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+          <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+          <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+          <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+          <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
+          <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
           <li>
-            <a href="../../index.html">Home</a>
-          </li>
-          <li>
-            <a href="../../Pagina_1/sobre.html">Sobre</a>
-          </li>
-          <li>
-            <a href="../../Pagina_3/circulacao.html">Circulação</a>
-          </li>
-          <li>
-            <a href="../../Pagina_4/impactos.html">Impactos</a>
-          </li>
-          <li>
-            <a href="../../Pagina_5/evolucao.html">Curiosidades</a>
-          </li>
-          <li>
-            <a href="../../Pagina_6/antiguidades.html">Antiguidades</a>
-          </li>
-          <li>
-            <p id="botao">
-              <a href="../../PaginaQuiz/quiz.html">Jogue Quiz!</a>
-            </p>
+            <a class="quiz-button" href="../Quiz/index.html">Jogue Quiz!</a>
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
+    <div class="mobile">
+      <div class="menuzao">
+        <button class="menu" onclick="toggleMenu()">&#9776;</button>
+        <nav class="sidebar" id="sidebar">
+          <button class="close-btn" onclick="toggleMenu()">&times;</button>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+            <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+            <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+            <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+            <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
+            <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+            <li><a href="../Quiz/index.html">Jogue Quiz!</a></li>
+          </ul>
+        </nav>
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+        <script>
+          function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            const overlay = document.getElementById("overlay");
+            sidebar.classList.toggle("open");
+            overlay.classList.toggle("open");
+          }
+        </script>
+      </div>
+      <a href="../index.html"><img class="mobile" src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
+    </div>
+    
+  </header>
 
-    <main>
-      <!-- TELA INICIAL-->
 
-      <div id="tela-inicial" class="tela-inicial">
-        <p>Seja bem-vindo ao..</p>
+  <main>
+    <!-- TELA INICIAL-->
 
-        <h1>Quiz Multiconhecimentos!</h1>
+    <div id="tela-inicial" class="tela-inicial">
+      <p>Seja bem-vindo ao..</p>
 
-        <h2 class="regras">Regras do jogo</h2>
+      <h1>Quiz Multiconhecimentos!</h1>
 
-        <p>São <span>Doze perguntas</span></p>
+      <h2 class="regras">Regras do jogo</h2>
 
-        <ul>
-          <li>
-            <p>5 Perguntas <span>Fáceis</span></p>
-          </li>
-          <li>
-            <p>4 perguntas <span>Médias</span></p>
-          </li>
-          <li>
-            <p>3 Perguntas <span>Difíceis</span></p>
-          </li>
-        </ul>
+      <p>São <span>Doze perguntas</span></p>
 
-        <p>Quatro Alternativas. Uma Correta.</p>
+      <ul>
+        <li>
+          <p>5 Perguntas <span>Fáceis</span></p>
+        </li>
+        <li>
+          <p>4 perguntas <span>Médias</span></p>
+        </li>
+        <li>
+          <p>3 Perguntas <span>Difíceis</span></p>
+        </li>
+      </ul>
 
-        <p>Vinte segundos para responder cada pergunta</p>
+      <p>Quatro Alternativas. Uma Correta.</p>
 
-        <button onclick="inicQuiz()">Começar a jogar</button>
-        <!-- Contém uma variável inicQuiz para ser executada pelo JS -->
+      <p>Vinte segundos para responder cada pergunta</p>
 
-        <h2 class="sorte">Boa Sorte!</h2>
+      <button onclick="inicQuiz()">Começar a jogar</button>
+      <!-- Contém uma variável inicQuiz para ser executada pelo JS -->
+
+      <h2 class="sorte">Boa Sorte!</h2>
+    </div>
+
+    <!-- TELA DO JOGO (Inicia ocultada) -->
+
+    <div id="tela-jogo" class="tela-jogo" style="display: none">
+      <!-- Esse style funciona parecido com o display do CSS, você seleciona que forma os elemntos vão ser organizados -->
+
+      <!-- Indicadores para o jogador -->
+
+      <h4 id="dific">Dificuldade : Fácil</h4>
+
+      <h3 id="tempo">Tempo : 20s</h3>
+
+      <!-- Pergunta e Botões -->
+
+      <h2 id="pergu" class="pergu">Carregando...</h2>
+
+      <div id="opcs" class="opcs">
+        <button class="botao" onclick="verificar(0)"></button>
+        <!-- Essa variavél serve pra fazer a verificacao no JS, sendo que cada opção nós associamos a um número a partir de 0 -->
+        <button class="botao" onclick="verificar(1)"></button>
+        <button class="botao" onclick="verificar(2)"></button>
+        <button class="botao" onclick="verificar(3)"></button>
       </div>
 
-      <!-- TELA DO JOGO (Inicia ocultada) -->
+      <h3 id="resp" class="resp"></h3>
 
-      <div id="tela-jogo" class="tela-jogo" style="display: none">
-        <!-- Esse style funciona parecido com o display do CSS, você seleciona que forma os elemntos vão ser organizados -->
+      <button id="avanc" class="avanc" onclick="proximaPergunta()">
+        Avançar
+      </button>
+      <!-- Essa parte só aparece quando alguma opcao é selecionada -->
+    </div>
 
-        <!-- Indicadores para o jogador -->
+    <!-- TELA FINAL (Só aparece depois que todas as perguntas forem respondidas) -->
 
-        <h4 id="dific">Dificuldade : Fácil</h4>
+    <div id="tela-final" class="tela-final" style="display: none">
+      <h2>Fim de Jogo!</h2>
 
-        <h3 id="tempo">Tempo : 20s</h3>
+      <h3 id="ponts-final"></h3>
 
-        <!-- Pergunta e Botões -->
+      <button onclick="location.reload()">Deseja jogar novamente?</button>
+    </div>
 
-        <h2 id="pergu" class="pergu">Carregando...</h2>
+    <script src="script.js"></script>
+  </main>
 
-        <div id="opcs" class="opcs">
-          <button class="botao" onclick="verificar(0)"></button>
-          <!-- Essa variavél serve pra fazer a verificacao no JS, sendo que cada opção nós associamos a um número a partir de 0 -->
-          <button class="botao" onclick="verificar(1)"></button>
-          <button class="botao" onclick="verificar(2)"></button>
-          <button class="botao" onclick="verificar(3)"></button>
-        </div>
+  <footer>
 
-        <h3 id="resp" class="resp"></h3>
-
-        <button id="avanc" class="avanc" onclick="proximaPergunta()">
-          Avançar
-        </button>
-        <!-- Essa parte só aparece quando alguma opcao é selecionada -->
-      </div>
-
-      <!-- TELA FINAL (Só aparece depois que todas as perguntas forem respondidas) -->
-
-      <div id="tela-final" class="tela-final" style="display: none">
-        <h2>Fim de Jogo!</h2>
-
-        <h3 id="ponts-final"></h3>
-
-        <button onclick="location.reload()">Deseja jogar novamente?</button>
-      </div>
-
-      <script src="script.js"></script>
-    </main>
-
-    <footer>
-      <div>
+    <div class="rodape">
+      <div class="doubles">
         <ul class="mapa">
-          <h2>Mapa</h2>
-          <li><a href="../Pagina_1/home.html">Home</a></li>
-          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
           <li>
-            <a href="../Pagina_2/pag_2PI/pag_2PI/evolucao.html">Circulação</a>
+            <h2>Mapa</h2>
           </li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+          <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+          <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
           <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
-          <li><a href="../Pagina_5/evolucao.html">costumes</a></li>
+          <li><a href="../Pagina_5/costumes.html">Costumes</a></li>
           <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
         </ul>
         <ul class="redes">
-          <h2>Redes</h2>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Github</a></li>
-        </ul>
-        <ul class="fontes">
-          <h2>Fontes</h2>
-          <li><a href="">Site1</a></li>
-          <li><a href="">Site2</a></li>
+          <li>
+            <h2>Redes</h2>
+          </li>
+          <li><a href="https://www.instagram.com/tech_and_history?stkn=Y3F2dmEzdG81b2Vv"><img
+                src="../Pagina_6/src/logoInsta.png" alt="">Instagram</a></li>
+          <li><a href="https://github.com/vicenzoalvesifc-sudo/Com-rcioe-circula-o-de-tecnologia----Civiliza-es"><img
+                src="../Pagina_6/src/gitLogo.png" alt="">Github</a>
+          </li>
         </ul>
       </div>
-      <p>
-        <span>© 2026 Tech&History</span>. Desenvolvido por: Gabriel, Andrius,
-        Matheus Mello, Matheus Rafael, Vicenzo e Heitor
-      </p>
-    </footer>
-  </body>
+      <ul class="fontes">
+        <li>
+          <h2>Fontes</h2>
+        </li>
+        <li><a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/"><img
+              src="../Pagina_6/src/logoHostgator.png" alt="">HostGator</a></li>
+        <li><a href="https://e-safer.com.br/evolucao-da-tecnologia-durante-as-decadas/"><img
+              src="../Pagina_6/src/eSaferLogo.jpeg" alt="">e-Safer</a></li>
+        <li><a href="https://www.britannica.com/technology/technology"><img src="../Pagina_6/src/encBritLogo.jpeg"
+              alt="">Encyclopaedia Britannica</a></li>
+      </ul>
+    </div>
+    <p>
+      <span>© 2026 Tech&History</span>. Desenvolvido por: Gabriel, Andrius, Matheus Mello,
+      Matheus Rafael, Vicenzo e Heitor. Todos os direitos reservados
+    </p>
+  </footer>
+</body>
+
 </html>
