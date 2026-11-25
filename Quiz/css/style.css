@@ -45,7 +45,6 @@ p {
 /*--------------------------------------Mobile----------------------------------------------*/
 
 /* HEADER */
-
 header div.mobile {
   display: block;
 }
@@ -145,6 +144,7 @@ header div.mobile {
 
 main {
    padding: 90px 12%;
+   margin-top: 50px;
 }
 
 
