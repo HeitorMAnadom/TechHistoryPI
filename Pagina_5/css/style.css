@@ -245,6 +245,164 @@ p {
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 900px) {
 
+  /* Banner - Desktop (baseado em Pagina_2) */
+  .banner {
+    min-height: 520px;
+    padding: 90px 12%;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 18px;
+  }
 
+  .banner p.tags {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+
+  .banner h2.title-main {
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .banner p.descricao {
+    max-width: 680px;
+    font-size: 0.8rem;
+    line-height: 1.8;
+    text-align: left;
+  }
+
+  /* Conceitual - Desktop */
+  .conceitual {
+    padding: 70px 10%;
+    align-items: flex-start;
+    text-align: left;
+    gap: 50px;
+  }
+
+  .conceitual > div {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 15px 45px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .conceitual h2.conc,
+  .conceitual h2.onde {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .conceitual p.conceito,
+  .conceitual p.ocorrencia {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    width: 100%;
+    max-width: 65ch;
+    font-size: 0.75rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .conceitual img.amostra {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Curiosidades - Desktop (grade de 3 colunas como .eras em Pagina_2) */
+  .curiosid {
+    padding: 70px 10%;
+    align-items: flex-start;
+    text-align: left;
+    gap: 35px;
+  }
+
+  .curiosid h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .curiosid ul.curiosid-lista {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .curiosid ul.curiosid-lista li.curiosid-card {
+    padding: 25px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .curiosid .curiosid-icon img {
+    width: 56px;
+    height: auto;
+  }
+
+  .curiosid li.curiosid-card h3 {
+    font-size: 1.15rem;
+    text-align: left;
+  }
+
+  .curiosid li.curiosid-card p {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  /* Moderno - Desktop (baseado em .futuro em Pagina_2) */
+  .moderno {
+    padding: 80px 10%;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .moderno h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .moderno p.permuta-moderna {
+    max-width: 750px;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .moderno h3 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .moderno ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .moderno ul li {
+    padding: 25px;
+    text-align: left;
+  }
+
+  .moderno ul li p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    text-align: left;
+  }
 
 }
