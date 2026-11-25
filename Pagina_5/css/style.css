@@ -331,6 +331,70 @@ header div.mobile {
   display: inline-block;
   margin-bottom: 0.35em;
 }
+footer {
+  padding: 0 6vw 3vw 6vw;
+  border-top: solid 2px rgb(3, 102, 69);
+}
+
+footer div.doubles {
+  display: flex;
+  gap: 12vw;
+  padding-bottom: 30px;
+}
+
+footer div ul li {
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer div ul.fontes li {
+  display: flex;
+  align-items: center;
+}
+
+footer div ul.redes li {
+  display: flex;
+  flex-direction: row;
+}
+
+footer div ul li img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+footer div ul li a {
+  padding: 2px;
+}
+
+footer a:hover {
+  color: #000080;
+  border-bottom: #000080;
+}
+
+
+footer h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+
+}
+
+
+footer a:hover {
+  border-bottom: 2px solid white;
+  color: #f0ede5;
+}
+
+footer p {
+  padding: 20px 0;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 900px) {
@@ -561,6 +625,28 @@ header div.mobile {
     font-size: 0.75rem;
     line-height: 1.6;
     text-align: left;
+  }
+div.rodape {
+    margin: 0 1.4vw 3vw 1.4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.rodape a {
+    font-size: 0.6rem;
+  }
+
+  div.rodape a:hover {
+    color: #000080;
+    border-bottom: #000080 solid 2px;
+  }
+
+
+  footer p {
+    margin: 2vw 1.4vw;
+    font-size: 0.4rem;
+    text-align: center;
+    padding: 50px;
   }
 
 }
