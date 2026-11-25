@@ -307,14 +307,6 @@ header div.mobile {
   transition: transform 0.2s ease;
 }
 
-.futuro-numero {
-  display: block;
-  color: #4385b8;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
 
 .futuro-item h5 {
   font-size: 19px;
