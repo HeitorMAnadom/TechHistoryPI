@@ -13,7 +13,7 @@ Medu - Oswald
 html {
   font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
   font-family: "Epilogue", sans-serif;
-  scroll-behavior: smooth ;
+  scroll-behavior: smooth;
 }
 
 i {
@@ -35,165 +35,216 @@ p {
   text-align: center;
 }
 
+/* = - = - = - = - = MOBILE = - = - = - = - =*/
+
 /* = - = - = HEADER = - = - = */
 
 /* = - = - = BANNER = - = - = */
 
-  .banner {
-    padding: 30px;
-    background-color: rgb(8, 13, 24);
-    color: whitesmoke;
-    border-bottom: 2px solid rgb(107, 106, 106);
-  }
+.banner {
+  background-color: #0F1728;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 5vw 3.5vw;
+  gap: 0.85vw;
+}
 
-  .banner p.tags {
-    font-size: 0.6rem;
-    font-weight: 600;
-    color: #2f3e88;
-    margin-bottom: 6px;
-    white-space: nowrap;
-    text-align: center;
-    justify-content: center;
-  }
+.banner p.tags {
+  color: #C2B28F;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  font-family: "Fjalla One", sans-serif;
+}
 
-  .banner h2.oque {
-    font-size: 1.75rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 50px;
-    letter-spacing: 1.5px;
-  }
+.banner h2.title-main {
+  font-size: 1.7rem;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
 
-  .banner h2.oque span.realmente {
-    color: #000080;
-    font-weight: 600;
-  }
+.banner h2.title-main span {
+  color: #9299A8;
+}
 
-  .banner h2.conc {
-    font-size: 1.3rem;
-    justify-content: center;
-    text-align: left;
-    margin-left: 5px;
-  }
+.banner p.descricao {
+  color: #E2D4B7;
+  font-size: 0.85rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
 
-  .banner p.conceito {
-    margin: 4px 8px 20px 8px;
-    font-size: 0.8rem;
-  }
+/* = - = - = CONCEITUAL = - = - = */
 
-  .banner h2.onde {
-    font-size: 1.3rem;
-    justify-content: center;
-    text-align: left;
-    margin-left: 5px;
-  }
+.conceitual {
+  background-color: #1B263B;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 5vw 3.5vw;
+  gap: 1.2vw;
+}
 
-  .banner p.ocorrencia {
-    margin: 4px 8px 40px 8px;
-    font-size: 0.8rem;
-  }
+.conceitual h2.conc,
+.conceitual h2.onde {
+  font-size: 1.4em;
+  color: #F8FAFC;
+}
 
-/* = - = - = CURIOSIDADES = - = - = */
+.conceitual h2.onde span {
+  color: #E2C792;
+}
 
-  .curiosid {
-    background-color: rgb(15, 23, 40);
-    color: whitesmoke;
-    padding: 25px 35px 30px 35px;
-  }
+.conceitual p.conceito,
+.conceitual p.ocorrencia {
+  font-size: 0.9rem;
+  width: 90%;
+  color: #CBD5E1;
+}
 
-  .curiosid h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 50px;
-    letter-spacing: 1px;
-    justify-content: center;
-    border: 2px solid #2f3e88;
-    background-color: #2f3e88;;
-    box-shadow: 6px 6px 6px black;
-  }
+.conceitual p.conceito span,
+.conceitual p.ocorrencia span {
+  color: #E2C792;
+}
 
-  .curiosid ul li {
-    margin-bottom: 25px;
-  }
+.conceitual img.amostra {
+  width: 100%;
+  border-radius: 12px;
+}
 
-  .curiosid ul li img {
-    margin-bottom: 10px;
-  }
+/* = - = - = CURIOSID = - = - = */
+
+.curiosid {
+  background-color: #334155;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding: 5vw 3.5vw;
+  gap: 4vw;
+}
+
+.curiosid h2 {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+}
+
+.curiosid h2 span {
+  color: #F3D59B;
+}
+
+.curiosid ul.curiosid-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+  width: 90%;
+  list-style: none;
+}
+
+.curiosid ul.curiosid-lista li.curiosid-card {
+  background-color: whitesmoke;
+  color: #0F1728;
+  border-radius: 4px;
+  padding: 1.5em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+  border: 2px solid #414D69;
+}
+
+.curiosid li.curiosid-card h3 {
+  font-size: 1.1rem;
+  color: #0F1728;
+}
+
+.curiosid li.curiosid-card h3 span {
+  color: #414D69;
+  font-size: 0.8rem;
+}
+
+.curiosid li.curiosid-card p {
+  font-size: 0.85rem;
+  color: #334155;
+  line-height: 1.4;
+}
 
 /* = - = - = MODERNO = - = - = */
 
 .moderno {
+  background-color: #E2E8F0;
+  display: flex;
+  flex-direction: column;
+  color: black;
   align-items: center;
   text-align: center;
-  margin: 30px 15px;
+  padding: 5vw 3.5vw;
+  gap: 4vw;
 }
 
-  /* TÍTULO PRINCIPAL */
-  .moderno-div h2 {
-    font-size: clamp(1.6rem, 3.5vw, 2.3rem);
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-  }
+.moderno h2 {
+  font-size: 1.5rem;
+  color: #0F1728;
+}
 
-  .moderno-div h2 span {
-    color: #00d8f6; 
-  }
+.moderno h2 span {
+  color: #8A5A19;
+}
 
-  /* PARÁGRAFO INTRODUTÓRIO */
-  .permuta-moderna {
-    font-size: 0.8rem;
-    line-height: 1.6;
-    color: black;
-    margin-bottom: 30px;
-  }
+.moderno p.permuta-moderna {
+  font-size: 0.85rem;
+  color: #334155;
+}
 
-  .moderno-div h3 {
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-    font-weight: 700;
-    margin-bottom: 28px;
-  }
+.moderno h3 {
+  font-size: 1.2rem;
+  color: #162037;
+}
 
-  .moderno-div h3 span {
-    color: #65d46e;
-  }
+.moderno h3 span {
+  color: #a26d23;
+}
 
-  .moderno-div ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
+.moderno ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  width: 90%;
+  list-style: none;
+}
 
-/* = - = - = FOOTER = - = - = */
+.moderno ul li {
+  background-color: whitesmoke;
+  border: 2px solid #414D69;
+  padding: 4vw 3vw;
+  border-radius: 3px;
+}
 
-  footer {
-    padding: 3vw 6vw;
-    border-top:solid 2px rgb(3, 102, 69);
-  }
+.moderno ul li p {
+  font-size: 0.85rem;
+  color: #334155;
+  line-height: 1.45;
+}
 
-  footer h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 20px 0 10px 0;
-
-  }
-
-  footer a:hover {
-    border-bottom: 2px solid #000080;
-    color: #000080;
-  }
-
-  footer p {
-    padding: 20px 0;
-    font-size: 0.7rem;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+.moderno ul li p span {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.05rem;
+  color: #8A5A19;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  margin-bottom: 0.35em;
+}
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 900px) {
+
+
 
 }
