@@ -14,6 +14,7 @@ html {
   font-family: "Epilogue", sans-serif;
   scroll-behavior: smooth;
   color: white;
+  background-color: rgb(15, 23, 40);
 }
 
 i {
@@ -37,9 +38,6 @@ p {
   text-align: center;
 }
 
-html {
-  background-image: linear-gradient(140deg, #1f1d3a, #000000, #1f1d3a);
-}
 
 
 
@@ -146,7 +144,8 @@ section.rotas h1 {
 
 
 section.rotas h1 span {
-    background-color: rgb(14, 7, 109);
+    color: #3975a8;
+    font-weight: bold;
     padding: 5px 10px;
     display: inline-block;
     border-radius: 10px;
@@ -214,9 +213,9 @@ section.rotas h1 span {
 
 }
 
-.container ul li h3{
+.container ul li strong{
   font-size: 1.2rem;
-  padding: 1vw 0 1vw 1vw;
+  padding: 1vw 0vw 1vw 1vw;
   border-bottom: solid 12px rgb(255, 255, 255);
   margin-bottom: 2vw;
 }
@@ -231,7 +230,8 @@ section.rotas h1 span {
   font-size: 1.5rem ;
   padding-bottom: 8vw;
   span{
-    background-color: rgb(14, 7, 109);
+    color: #3975a8;
+    font-weight: bold;
     padding: 5px 10px;
     display: inline-block;
     border-radius: 10px;
@@ -242,9 +242,9 @@ section.rotas h1 span {
   padding-bottom: 6vw;
 }
 
-.frentes strong {
+.frentes h3 {
   font-size: 1.2rem;
-  border-bottom: solid 2px gray;
+  border-bottom: solid 2px;
 }
 
 
@@ -286,11 +286,11 @@ section.rotas h1 span {
   font-size: 1.5rem ;
   padding: 5vw 8vw;
   span{
-    background-color: rgb(14, 7, 109);
-    padding: 3px 10px;
+    color: #3975a8;
+    font-weight: bold;
+    padding: 5px 10px;
     display: inline-block;
     border-radius: 10px;
-    color :white;
   }
 }
 
@@ -393,10 +393,50 @@ padding: 1vw 2vw;
 
 }
 
+
+
 footer {
-  padding: 3vw 6vw;
+  padding: 0 6vw 3vw 6vw;
   border-top: solid 2px rgb(3, 102, 69);
 }
+
+footer div.doubles {
+  display: flex;
+  gap: 12vw;
+  padding-bottom: 30px;
+}
+
+footer div ul li {
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer div ul.fontes li {
+  display: flex;
+  align-items: center;
+}
+
+footer div ul.redes li {
+  display: flex;
+  flex-direction: row;
+}
+
+footer div ul li img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+footer div ul li a {
+  padding: 2px;
+}
+
+footer a:hover {
+  color: #000080;
+  border-bottom: #000080;
+}
+
 
 footer h2 {
   font-size: 1.2rem;
@@ -404,6 +444,7 @@ footer h2 {
   padding: 20px 0 10px 0;
 
 }
+
 
 footer a:hover {
   border-bottom: 2px solid white;
@@ -415,6 +456,7 @@ footer p {
   font-size: 0.7rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 
 /* MEDIA QUERY - DESKTOP */
@@ -515,11 +557,11 @@ section.rotas h1 {
 }
 
 section.rotas h1 span {
-    background-color: rgb(14, 7, 109);
+    color: #3975a8;
+    font-weight: bold;
     padding: 5px 10px;
     display: inline-block;
     border-radius: 10px;
-    font-size: 1.2rem;
 }
 
 .paragrafo p{
@@ -558,6 +600,7 @@ section.rotas h1 span {
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
   font-size: 0.5rem;
+  border-radius: 20px;
 }
 
 @keyframes appear{
@@ -587,7 +630,8 @@ section.rotas h1 span {
   font-size: 1.1rem ;
   padding-bottom: 4vw;
   span{
-    background-color: rgb(14, 7, 109);
+    color: #3975a8;
+    font-weight: bold;
     padding: 5px 10px;
     display: inline-block;
     border-radius: 10px;
@@ -639,7 +683,7 @@ section.rotas h1 span {
 }
 
 .adress{
-  padding: 15vw 15vw 5vw 15vw;  
+  padding: 1vw 25vw 5vw 25vw;  
   p{
     font-size: 0.7rem;
   }
@@ -653,10 +697,11 @@ section.rotas h1 span {
   font-size: 1.1rem ;
   padding: 5vw 8vw;
   span{
-    background-color: rgb(14, 7, 109);
-    padding: 3px 10px;
+    color: #3975a8;
+    font-weight: bold;
+    padding: 5px 10px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 10px;;
   }
 }
 
@@ -679,8 +724,9 @@ border-radius: 7px;
 }
 
 .adress .lista ul li:not(:last-child){
-  border-bottom: solid 2px #e8e8eb;
+  border-bottom: solid 3px #e8e8eb;
 }
+
 
 .adress .lista ul li p span{
 padding: 0.5vw 1vw;

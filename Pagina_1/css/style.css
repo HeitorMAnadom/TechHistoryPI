@@ -42,66 +42,6 @@ html {
 }
 
 
-
-section.principal div.mona {
-  text-align: center;
-  color: aliceblue;
-}
-
-section.principal div.mona h1 {
-  font-size: 1.7rem;
-  animation: daEsquerda 0.8s ease-in forwards;
-}
-
- 
-
-section.principal div.mona h1 span {
-    background-color: rgb(14, 7, 109);
-    padding: 5px 10px;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-section.principal div.mona img {
-  height: 40vw;
-  margin: 3vw 2vw;
-}
-
-section.principal div.mona h3 {
-  font-size: 1.4rem;
-  padding: 1vw;
-}
-
-section.principal div.mona p {
-  font-size: 1rem;
-  padding: 7vw;
-}
-
-section.principal div.mona p span {
-    background-color: rgb(14, 7, 109);
-    padding: 5px 10px;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-section.principal div.mona button a {
-  background-color: rgb(41, 38, 85);
-  padding: 3vw;
-  display: inline-block;
-  border-radius: 10px;
-}
-
-section.principal div.mona button:hover a {
-  padding: 2vw;
-  background-image: linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 0),
-    rgba(255, 0, 0, 0)
-  );
-  border: solid 1px white;
-  border-radius: 10px;
-}
-
 /* HEADER */
 
 header {
@@ -185,32 +125,126 @@ header img {
   display: block;
 }
 
-/* Header */
-
 div.desktop {
   display: none;
 }
 
-.sobre {
+/* Header */
+
+
+
+section.principal div.mona {
   text-align: center;
-  padding: 2vw;
+  color: aliceblue;
 }
 
-.sobre h3 a {
-  background-color: rgb(41, 38, 85);
+section.principal div.mona h1 {
+  font-size: 1.7rem;
+  animation: daEsquerda 0.8s ease-in forwards;
+  padding: 0 15vw;
+}
+
+ 
+
+section.principal div.mona h1 span {
+    color: #3975a8;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+section.principal div.mona img {
+  height: 40vw;
+  margin: 3vw 2vw;
+}
+
+section.principal div.mona h3 {
+  font-size: 1.4rem;
+  padding: 1vw;
+}
+
+section.principal div.mona p {
+  font-size: 1rem;
+  padding: 7vw;
+}
+
+section.principal div.mona p span {
+    color: #3975a8;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+section.principal div.mona a {
+  background-color: #1f1d3a;
   padding: 3vw;
   display: inline-block;
   border-radius: 10px;
 }
 
-.sobre h3 a:hover {
-  font-size: 1.4rem;
+
+.sobre {
+  text-align: center;
+  padding: 2vw 2vw 10vw 2vw;
 }
 
-footer {
-  padding: 3vw 6vw;
-  border-top: solid 2px rgb(3, 102, 69);
+.sobre h3{
+  color: white;
 }
+
+.sobre h3 a {
+  background-color: #1f1d3a;
+    padding: 2vw;
+    border-radius: 2vw;
+    text-align: center;
+}
+/*Footer*/
+
+footer {
+  padding: 0 6vw 3vw 6vw;
+  border-top: solid 2px rgb(3, 102, 69);
+  background-color: white;
+}
+
+footer div.doubles {
+  display: flex;
+  gap: 12vw;
+  padding-bottom: 30px;
+}
+
+footer div ul li {
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer div ul.fontes li {
+  display: flex;
+  align-items: center;
+}
+
+footer div ul.redes li {
+  display: flex;
+  flex-direction: row;
+}
+
+footer div ul li img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+footer div ul li a {
+  padding: 2px;
+}
+
+footer a:hover {
+  color: #000080;
+  border-bottom: #000080;
+}
+
 
 footer h2 {
   font-size: 1.2rem;
@@ -218,6 +252,7 @@ footer h2 {
   padding: 20px 0 10px 0;
 
 }
+
 
 footer a:hover {
   border-bottom: 2px solid white;
@@ -229,117 +264,16 @@ footer p {
   font-size: 0.7rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 600px) {
 
-footer {
-  padding: 3vw 6vw;
-  border-top: solid 2px rgb(3, 102, 69);
-}
-
-footer h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 20px 0 10px 0;
-
-}
-
-footer a:hover {
-  border-bottom: 2px solid white;
-  color: #f0ede5;
-}
-
-footer p {
-  padding: 20px 0;
-  font-size: 0.7rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
   html {
     padding: 10vw 0 0 0;
   }
-  section.principal div.mona {
-    text-align: center;
-    color: aliceblue;
-  }
 
-  section.principal div.mona h1 {
-    font-size: 1.2rem;
-    animation: daEsquerda 1s ease-in-out forwards;
-  }
-
-  section.principal div.mona h1 span {
-    font-size: 1.2rem;
-    color: aquamarine;
-  }
-
-  section.principal div.mona img {
-    height: 15vw;
-    margin: 3vw 2vw;
-  }
-
-  section.principal div.mona h2 {
-    font-size: 1rem;
-    padding: 1vw;
-  }
-
-  section.principal div.mona p {
-    font-size: 0.7rem;
-    padding: 6vw 12vw;
-    text-align: start;
-  }
-
-  section.principal div.mona p span {
-    color: aquamarine;
-  }
-
-  section.principal div.mona a {
-    padding: 1vw;
-    background-image: linear-gradient(
-      90deg,
-      rgb(116, 231, 193),
-      rgb(91, 199, 154)
-    );
-    border-radius: 10px;
-    text-align: center;
-    font-size: 0.7rem;
-  }
-
-  section.principal div.mona button:hover a {
-    padding: 1vw;
-    background-image: linear-gradient(
-      90deg,
-      rgba(255, 0, 0, 0),
-      rgba(255, 0, 0, 0)
-    );
-    border: solid 1px white;
-    border-radius: 10px;
-  }
-  
-  .sobre {
-    text-align: center;
-    padding: 2vw;
-  }
-
-  .sobre h3{
-    font-size: 0.7rem;
-  }
-
-  .sobre h3 a {
-    background-color: rgb(41, 38, 85);
-    color: aquamarine;
-    transition: 0.4s ease-in-out;
-    position: static;
-    font-size: 0.7rem;
-    padding: 1vw;
-  }
-
-  .sobre h3 a:hover {
-    font-size: 0.72rem;
-  }
-  
-  
   /* HEADER */
 
   .menu {
@@ -421,4 +355,85 @@ header div.mobile {
   }
  
 
+
+
+  section.principal div.mona {
+    text-align: center;
+    color: aliceblue;
+  }
+
+  section.principal div.mona h1 {
+    font-size: 1.2rem;
+    animation: daEsquerda 1s ease-in-out forwards;
+  }
+
+  section.principal div.mona h1 span {
+    font-size: 1.2rem;
+    color: #3975a8;
+    font-weight: bold;
+  }
+
+  section.principal div.mona img {
+    height: 15vw;
+    margin: 3vw 2vw;
+  }
+
+  section.principal div.mona h2 {
+    font-size: 1rem;
+    padding: 1vw;
+  }
+
+  section.principal div.mona p {
+    font-size: 0.7rem;
+    padding: 6vw 12vw;
+    text-align: start;
+  }
+
+  section.principal div.mona p span {
+    color: #3975a8;
+    font-weight: bold;
+  }
+
+  section.principal div.mona a {
+    background-color: #1f1d3a;
+    padding: 1.2vw;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  section.principal div.mona a:hover {
+    background: none;
+    color: #3975a8;
+    border: solid 1px white;
+    transition: ease 1s;
+  }
+  
+  .sobre {
+    text-align: center;
+    padding: 2vw;
+  }
+
+  .sobre h3{
+    font-size: 0.7rem;
+    color: white;
+  }
+
+  .sobre h3 a {
+    background-color: #1f1d3a;
+    padding: 1.2vw;
+    border-radius: 2vw;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .sobre h3 a:hover {
+    background: none;
+    color: #3975a8;
+    border: solid 1px white;
+    transition: ease 1s;
+  }
+  
+  
+  
 }
