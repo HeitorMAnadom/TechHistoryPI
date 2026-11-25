@@ -211,6 +211,7 @@ header div.mobile {
 
 .curiosid {
   background-color: #334155;
+  width: 100%;
   display: flex;
   flex-direction: column;
   color: white;
@@ -232,22 +233,34 @@ header div.mobile {
 .curiosid ul.curiosid-lista {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   gap: 4vw;
-  width: 90%;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
 .curiosid ul.curiosid-lista li.curiosid-card {
+  width: 100%;
   background-color: whitesmoke;
   color: #0F1728;
-  border-radius: 4px;
-  padding: 1.5em;
+  border-radius: 6px;
+  padding: 1.2rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8em;
+  text-align: center;
+  gap: 0.6rem;
   border: 2px solid #414D69;
+}
+
+.curiosid .curiosid-icon img {
+  width: 48px;
+  height: auto;
+  display: block;
 }
 
 .curiosid li.curiosid-card h3 {
@@ -475,6 +488,7 @@ footer p {
     justify-content: center;
     text-align: left;
     gap: 18px;
+    margin-top: 5vw;
   }
 
   .banner p.tags {
@@ -556,6 +570,7 @@ footer p {
 
   .curiosid ul.curiosid-lista {
     width: 100%;
+    max-width: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
