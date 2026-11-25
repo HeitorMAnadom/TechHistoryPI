@@ -433,6 +433,29 @@ header div.mobile {
     border: solid 1px white;
     transition: ease 1s;
   }
+
+  div.rodape {
+    margin: 0 1.4vw 3vw 1.4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.rodape a {
+    font-size: 0.6rem;
+  }
+
+  div.rodape a:hover {
+    color: #000080;
+    border-bottom: #000080 solid 2px;
+  }
+
+
+  footer p {
+    margin: 2vw 1.4vw;
+    font-size: 0.4rem;
+    text-align: center;
+    padding: 50px;
+  }
   
   
   

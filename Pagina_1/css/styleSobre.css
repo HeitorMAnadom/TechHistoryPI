@@ -48,6 +48,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #000000;
 }
 
 header img {
@@ -200,6 +201,7 @@ section.rotas h1 span {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
+  border-radius: 20px;
 }
 
 @keyframes appear{
@@ -262,6 +264,7 @@ section.rotas h1 span {
   border-radius: 10px;
   padding: 2vw;
   width: 65vw;
+
 }
 
 .frentes ul li p{
@@ -382,6 +385,10 @@ padding: 1vw 2vw;
   padding-bottom: 2vw;
  }
 
+ p.a{
+  text-align: start;
+ }
+
  p span{
   color: rgb(255, 22, 73);
   font-size: 1.2rem;
@@ -393,11 +400,13 @@ padding: 1vw 2vw;
 
 }
 
-
+/*Footer*/
 
 footer {
   padding: 0 6vw 3vw 6vw;
   border-top: solid 2px rgb(3, 102, 69);
+  background-color: white;
+  color: black;
 }
 
 footer div.doubles {
@@ -575,6 +584,26 @@ section.rotas h1 span {
 
 /*Visual-core*/
 
+.home-visual{
+  padding: 0vw 30vw 5vw 30vw;
+
+}
+
+.home-visual div.civilizacao{
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 1vw;
+  border-radius: 10px;
+  
+}
+
+.home-visual div span{
+  border-bottom: solid 2px gray; 
+  color: black;
+}
+
+.botoes
+
 
 .container{
   padding: 12vw;  
@@ -613,11 +642,16 @@ section.rotas h1 span {
   }
 }
 
-.container ul li h3{
+.container ul li strong{
   font-size: 0.8rem;
   padding: 1vw 0 1vw 1vw;
   border-bottom: solid 8px rgb(255, 255, 255);
   margin-bottom: 2vw;
+}
+
+.container ul li p {
+padding-top:3vw;
+text-align: start;
 }
 
 
@@ -665,6 +699,10 @@ section.rotas h1 span {
   padding: 2vw;
   width: 25vw;
   justify-self: center;
+}
+
+.frentes ul li h3{
+  font-size: 1rem;
 }
 
 .frentes ul li p{
@@ -738,14 +776,14 @@ padding: 0.5vw 1vw;
 
 .historia {
   background-color: #28264b83;
-  padding: 5vw;
-  margin: 20vw;
+  padding: 10vw;
+  margin: 8vw;
   border-radius: 5px;
-
   div.timeline-art h2{
     font-size: 1rem;
   }
-
+display: flex;
+justify-content: center;
 }
 
 .historia h2{
@@ -753,28 +791,13 @@ padding: 0.5vw 1vw;
   padding-bottom: 1vw;
 }
 
+.historia div.timeline-art{
+  margin: 5vw;
+}
+
 .historia div.timeline-art div.timeline-item{
   background-color: #5a56aa8c;
   padding: 3vw;
-  border-radius: 5px;
-}
-
-.ciclo{
-  padding: 5vw 8vw;
-}
-
-.ciclo div.lista-ciclo{
-  align-items: center;
-  justify-content: center;
-  background-color: #28264b83;
-  margin: 12vw;
-  padding: 10vw;
-  border-radius: 5px;
-}
-
-.ciclo div.lista-ciclo ul li{
-  background-color: #5a56aa8c;
-  padding: 1.3vw 1vw 1vw 1vw;
   border-radius: 5px;
 }
 
@@ -805,7 +828,11 @@ padding: 0.5vw 1vw;
   border-bottom: solid 1px #c2c2c2;
  }
 
- p span{
+ p.a{
+  text-align: start;
+ }
+
+ p.a span{
   color: rgb(255, 22, 73);
   font-size: 1.2rem;
   border-bottom: none;
@@ -817,28 +844,28 @@ padding: 0.5vw 1vw;
 
 }
 
-footer {
-  padding: 3vw 6vw;
-  border-top: solid 2px rgb(3, 102, 69);
-}
+div.rodape {
+    margin: 0 1.4vw 3vw 1.4vw;
+    display: flex;
+    justify-content: space-between;
+  }
 
-footer h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 20px 0 10px 0;
+  div.rodape a {
+    font-size: 0.6rem;
+  }
 
-}
+  div.rodape a:hover {
+    color: #000080;
+    border-bottom: #000080 solid 2px;
+  }
 
-footer a:hover {
-  border-bottom: 2px solid white;
-  color: #f0ede5;
-}
 
-footer p {
-  padding: 20px 0;
-  font-size: 0.7rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  footer p {
+    margin: 2vw 1.4vw;
+    font-size: 0.4rem;
+    text-align: center;
+    padding: 50px;
+  }
 
 
 
