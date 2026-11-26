@@ -110,6 +110,7 @@ function carregarPergunta() {
         botao.innerText = p.opcs[index];
         botao.disabled = false; // Deixa você clicar neles, já que como a gente tinha setado que só pode clicar uma vez, isso aqui reseta o botão, e deixa você clicar uma vez nele dnv
         botao.style.backgroundColor = ""; // Limpa as cores que tinham sido aplicadas na pergunta anterior
+        botao.style.borderColor = "";
         botao.style.color = ""; // Limpa a cor da letra branca
     });
 
@@ -118,6 +119,7 @@ function carregarPergunta() {
     // Esconde aqueles avisos que apareceram na pergunta de antes   
 
     document.getElementById("resp").innerText = "";
+    document.getElementById("resp").style.color = "";
     document.getElementById("avanc").style.display = "none";
 
     iniciarTempo();
@@ -154,25 +156,30 @@ function verificar(escolha) {
 
     botoes.forEach(botao => botao.disabled = true); //Desativa todos os botôes depos de algum ser clickado
 
-    if (escolha === p.resp) { //Estrutura pra pintar os botões de azul e vermelho dependendo da situação
+    if (escolha === p.resp) { // Estrutura pra pintar os botões com tons sóbrios que combinam com a paleta do quiz
     
         // Se o cara acertou
-        pontos++ //adciona um ponto
-        botoes[escolha].style.backgroundColor = "blue"; // Deixa o botão selecionado azul
-        botoes[escolha].style.color = "white"; //Deixa o texto branco pra deixar legível
-        resp.innerText = "Muito bem! Acertou essa."; //Mensagem pra mostrar que o jogador acertou
+        pontos++ // adiciona um ponto
+        botoes[escolha].style.backgroundColor = "#1E6B52"; // Verde-petróleo escuro para acerto
+        botoes[escolha].style.borderColor = "#144D3B";
+        botoes[escolha].style.color = "whitesmoke"; // Texto claro para manter alto contraste
+        resp.style.color = "#1E6B52";
+        resp.innerText = "Muito bem! Acertou essa."; // Mensagem pra mostrar que o jogador acertou
     } else {
 
         // Se o cara errou ou o tempo dele acabou
         if (escolha !== -1) { // Se ele errou mesmo, ou clicou errado
-            botoes[escolha].style.backgroundColor = "red"; // Deixa a selecionada errada como vermelho
-            botoes[escolha].style.color = "white";
+            botoes[escolha].style.backgroundColor = "#8F2D36"; // Bordô escuro para erro
+            botoes[escolha].style.borderColor = "#691E25";
+            botoes[escolha].style.color = "whitesmoke";
         }
 
-        // Se o tempo acabou mesmo
-        botoes[p.resp].style.backgroundColor = "blue";
-        botoes[p.resp].style.color = "white";
+        // Mostra a alternativa correta em destaque mesmo se errar ou acabar o tempo
+        botoes[p.resp].style.backgroundColor = "#1E6B52";
+        botoes[p.resp].style.borderColor = "#144D3B";
+        botoes[p.resp].style.color = "whitesmoke";
 
+        resp.style.color = "#8F2D36";
         resp.innerText = escolha === -1 ? "Tempo Esgotado!" : "Você Errou!";
 
     }

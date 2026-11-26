@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
-  <title>Quiz - v2.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio Tech&History | Quiz</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -65,34 +66,36 @@
     <!-- TELA INICIAL-->
 
     <div id="tela-inicial" class="tela-inicial">
-      <p>Seja bem-vindo ao..</p>
+      <p class="subtitulo-topo">DESAFIO DE CONHECIMENTO</p>
 
-      <h1>Quiz Multiconhecimentos!</h1>
+      <h1>DESAFIO <br> <span>TECH & HISTORY</span></h1>
 
-      <h2 class="regras">Regras do jogo</h2>
+      <p class="intro-quiz">
+        Teste o que você aprendeu sobre a história da tecnologia, rotas
+        comerciais e evolução dos mercados em uma disputa contra o relógio.
+      </p>
 
-      <p>São <span>Doze perguntas</span></p>
+      <h2 class="regras">COMO FUNCIONA <span>O DESAFIO</span></h2>
 
-      <ul>
+      <ul class="niveis-lista">
         <li>
-          <p>5 Perguntas <span>Fáceis</span></p>
+          <p><span>5 Questões</span><br />Nível Fácil</p>
         </li>
         <li>
-          <p>4 perguntas <span>Médias</span></p>
+          <p><span>4 Questões</span><br />Nível Médio</p>
         </li>
         <li>
-          <p>3 Perguntas <span>Difíceis</span></p>
+          <p><span>3 Questões</span><br />Nível Difícil</p>
         </li>
       </ul>
 
-      <p>Quatro Alternativas. Uma Correta.</p>
+      <p class="regras-extras">
+        <strong>12 perguntas</strong> • 4 alternativas (apenas 1 correta) •
+        <strong>20 segundos</strong> por questão
+      </p>
 
-      <p>Vinte segundos para responder cada pergunta</p>
-
-      <button onclick="inicQuiz()">Começar a jogar</button>
+      <button class="btn-iniciar" onclick="inicQuiz()">COMEÇAR DESAFIO</button>
       <!-- Contém uma variável inicQuiz para ser executada pelo JS -->
-
-      <h2 class="sorte">Boa Sorte!</h2>
     </div>
 
     <!-- TELA DO JOGO (Inicia ocultada) -->
@@ -131,9 +134,9 @@
     <div id="tela-final" class="tela-final" style="display: none">
       <h2>Fim de Jogo!</h2>
 
-      <h3 id="ponts-final"></h3>
+      <h3 id="ponts-Final"></h3>
 
-      <button onclick="location.reload()">Deseja jogar novamente?</button>
+      <button onclick="location.reload()">Jogar Novamente</button>
     </div>
 
     <script src="script.js"></script>

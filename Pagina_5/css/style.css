@@ -344,6 +344,8 @@ header div.mobile {
   display: inline-block;
   margin-bottom: 0.35em;
 }
+
+/* = - = - = FOOTER = - = - =  */
 footer {
   padding: 0 6vw 3vw 6vw;
   border-top: solid 2px rgb(3, 102, 69);

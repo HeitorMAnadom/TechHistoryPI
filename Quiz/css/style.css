@@ -17,11 +17,12 @@ html {
 }
 
 i {
-  font-family: "Jet Brains", monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
@@ -37,12 +38,27 @@ h2 {
 p {
   font-family: "Heebo", sans-serif;
   text-align: center;
-  font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+  font-size: 0.85rem;
 }
 
 
 
 /*--------------------------------------Mobile----------------------------------------------*/
+
+/* Main */
+
+  main {
+    background-color: #E2E8F0;
+    color: #334155;
+    padding: 8vw 5vw;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
 
 /* HEADER */
 header div.mobile {
@@ -135,17 +151,186 @@ header div.mobile {
   z-index: 5;
 }
 
+
 .overlay.open {
   display: block;
 }
 
+/* Tela inicial */
+
+  .tela-inicial,
+  .tela-jogo,
+  .tela-final {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .tela-inicial p.subtitulo-topo {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: #8A5A19;
+    margin-bottom: 0.5rem;
+  }
+
+  .tela-inicial h1 {
+    font-size: 2rem;
+    color: #0F1728;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .tela-inicial h1 span {
+    color: #8A5A19;
+  }
+
+  .tela-inicial p.intro-quiz {
+    font-size: 0.85rem;
+    color: #334155;
+    line-height: 1.5;
+    margin: 0 auto 1.75rem;
+  }
+
+  .tela-inicial h2.regras {
+    font-size: 1.15rem;
+    color: #162037;
+    margin-bottom: 1rem;
+  }
+
+  .tela-inicial h2.regras span {
+    color: #8A5A19;
+  }
+
+  .tela-inicial ul.niveis-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+    margin: 0 auto 1.5rem;
+    width: 90%;
+    list-style: none;
+  }
+
+  .tela-inicial ul.niveis-lista li {
+    background-color: whitesmoke;
+    border: 2px solid #414D69;
+    border-radius: 4px;
+    padding: 3.5vw 3vw;
+  }
+
+  .tela-inicial ul.niveis-lista li p {
+    font-size: 0.85rem;
+    color: #334155;
+    line-height: 1.45;
+  }
+
+  .tela-inicial ul.niveis-lista li p span {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1rem;
+    color: #8A5A19;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+  }
+
+  .tela-inicial p.regras-extras {
+    font-size: 0.8rem;
+    color: #162037;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Tela jogo */
+
+  .tela-jogo h4 {
+    font-size: 0.9rem;
+    color: #8A5A19;
+    margin-bottom: 0.4rem;
+  }
+
+  .tela-jogo h3 {
+    font-size: 1rem;
+    color: #162037;
+    margin-bottom: 1rem;
+  }
+
+  .tela-jogo h2.pergu {
+    font-size: 1.3rem;
+    color: #0F1728;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+  }
+
+  .tela-jogo .opcs {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+    margin: 0 auto 1.25rem;
+  }
+
+  .tela-jogo .opcs button {
+    font-family: "Heebo", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0F1728;
+    border: 2px solid #414D69;
+    border-radius: 4px;
+    padding: 3.5vw 4vw;
+    background-color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .tela-jogo .opcs button:hover:not(:disabled) {
+    border-color: #8A5A19;
+  }
+
+  .tela-jogo h3.resp {
+    font-size: 1.05rem;
+    color: #8A5A19;
+    margin-bottom: 1rem;
+  }
+
+  .tela-jogo button.avanc {
+    margin: 0 auto;
+  }
+
+  /* Tela final */
+
+  .tela-final h2 {
+    font-size: 1.6rem;
+    color: #0F1728;
+    margin-bottom: 0.75rem;
+  }
+
+  .tela-final h3#ponts-Final {
+    font-family: "Heebo", sans-serif;
+    font-size: 1rem;
+    color: #334155;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Botões principais das 3 telas (CTA) */
+  .tela-inicial button.btn-iniciar,
+  .tela-jogo button.avanc,
+  .tela-final button {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1rem;
+    border: 2px solid #8A5A19;
+    border-radius: 4px;
+    padding: 3vw 6vw;
+    background-color: #8A5A19;
+    color: whitesmoke;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+  }
+
+  .tela-inicial button.btn-iniciar:hover,
+  .tela-jogo button.avanc:hover,
+  .tela-final button:hover {
+    background-color: #0F1728;
+    border-color: #0F1728;
+  }
 
 /*------------------------------------------------------------------*/
-
-main {
-   padding: 90px 12%;
-   margin-top: 50px;
-}
 
 
 
@@ -219,14 +404,61 @@ footer p {
 
 
 /*--------------ate aqui-------*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
 
-  main p {
-    font-size: 0.7rem;
+  main {
+    padding: 130px 10% 70px;
   }
 
-  main h2 {
-    padding-bottom: 20px;
+  main p {
+    font-size: 0.75rem;
+  }
+
+  /* Tela inicial - Desktop */
+  .tela-inicial h1 {
+    font-size: 2.8rem;
+  }
+
+  .tela-inicial p.intro-quiz {
+    max-width: 65ch;
+    margin-bottom: 30px;
+  }
+
+  .tela-inicial ul.niveis-lista {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 28px;
+  }
+
+  .tela-inicial ul.niveis-lista li {
+    padding: 25px;
+  }
+
+  .tela-inicial button.btn-iniciar,
+  .tela-jogo button.avanc,
+  .tela-final button {
+    padding: 14px 28px;
+    font-size: 0.85rem;
+  }
+
+  /* Tela jogo - Desktop */
+  .tela-jogo h2.pergu {
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+  }
+
+  .tela-jogo .opcs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+
+  .tela-jogo .opcs button {
+    padding: 18px 20px;
+    font-size: 0.75rem;
   }
 
   /*--------------HEADER---------PODE COPIAR TD-----*/
