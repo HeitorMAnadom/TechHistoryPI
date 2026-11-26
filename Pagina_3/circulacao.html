@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,37 +9,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet" />
-  <title>Circulação | Tech&History</title>
+  <title>Circulação | Tech&amp;History</title>
 </head>
 
 <body>
   <header>
-      <div class="desktop">
-        <img src="source/logo_cortada.png" alt="" />
+    <div class="desktop">
+      <nav>
+        <a href="../index.html"><img src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
           <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
           <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
           <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
-          <li><a href="../Pagina_5/Pagina_5/evolucao.html">Curiosidades</a></li>
+          <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
           <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
+          <li>
+            <a class="quiz-button" href="../Quiz/index.html">Jogue Quiz!</a>
+          </li>
         </ul>
-        <button><a href="Quiz/index.html">Jogue Quiz!</a></button>
-      </div>
+      </nav>
+    </div>
+    <div class="mobile">
       <div class="menuzao">
         <button class="menu" onclick="toggleMenu()">&#9776;</button>
         <nav class="sidebar" id="sidebar">
           <button class="close-btn" onclick="toggleMenu()">&times;</button>
           <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
             <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
             <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
             <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
             <li><a href="../Pagina_5/costumes.html">Curiosidades</a></li>
             <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
-            <li><a href="../Quiz/index.html"></a></li>
+            <li><a href="../Quiz/index.html">Jogue Quiz!</a></li>
           </ul>
         </nav>
         <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
@@ -52,8 +57,9 @@
           }
         </script>
       </div>
-      <img class="mobile" src="source/logo_cortada.png" alt="" />
-    </header>
+      <a href="../index.html"><img class="mobile" src="../Pagina_1/source/logo_cortada.png" alt="" /></a>
+    </div>
+  </header>
   <main>
     <section class="banner">
       <h1>
@@ -94,56 +100,54 @@
           </p>
         </div>
       </div>
-      <ul>
-        <div class="lados">
-          <div>
-        <li class="box-red">
-          <div class="img-red">
-            <img src="IMAGENS/keyicon 2.png" alt="Chave de boca" />
-          </div>
-          <div>
-            <h3>Hardware</h3>
-            <p>Chips, dispositivos, máquinas.</p>
-          </div>
-        </li>
-        <li class="box-blue">
-          <div class="img-blue">
-          <img src="IMAGENS/disquete 1.png" alt="Disquete" />
-          </div>
-          <div>
-          <h3>Software</h3>
-          <p>Sistemas, apps, licenças.</p>
-          </div>
-        </li>
-        </div>
-        <div>
-        <li class="box-green">
-          <div class="img-green">
-          <img src="IMAGENS/cloud 1.png" alt="Nuvem" />
-          </div>
-          <div>
-          <h3>Serviços</h3>
-          <p>Cloud, suporte, consultoria.</p>
-          </div>
-        </li>
-        <li class="box-yellow">
-          <div class="img-yellow">
-          <img src="IMAGENS/brain 1.png" alt="Cerebro" />
-          </div>
-          <div>
-          <h3>Conhecimento</h3>
-          <p>Patentes, P&D, know-how.</p>
-          </div>
-        </li>
-        </div>
-        </div>
-      </ul>
+      <div class="lados">
+        <ul>
+          <li class="box-red">
+            <div class="img-red">
+              <img src="IMAGENS/keyicon%202.png" alt="Chave de boca" />
+            </div>
+            <div>
+              <h3>Hardware</h3>
+              <p>Chips, dispositivos, máquinas.</p>
+            </div>
+          </li>
+          <li class="box-blue">
+            <div class="img-blue">
+              <img src="IMAGENS/disquete%201.png" alt="Disquete" />
+            </div>
+            <div>
+              <h3>Software</h3>
+              <p>Sistemas, apps, licenças.</p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="box-green">
+            <div class="img-green">
+              <img src="IMAGENS/cloud%201.png" alt="Nuvem" />
+            </div>
+            <div>
+              <h3>Serviços</h3>
+              <p>Cloud, suporte, consultoria.</p>
+            </div>
+          </li>
+          <li class="box-yellow">
+            <div class="img-yellow">
+              <img src="IMAGENS/brain%201.png" alt="Cérebro" />
+            </div>
+            <div>
+              <h3>Conhecimento</h3>
+              <p>Patentes, P&amp;D, know-how.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="ideia">
       <h2>Da <span>Ideia</span> até a sua <span class="mao">mão.</span></h2>
 
       <ol>
-        <li >
+        <li>
           <h3><span class="I">1.</span></h3>
           <h4>Pesquisa</h4>
           <p>Laboratórios criam protótipos e patentes.</p>
@@ -214,35 +218,50 @@
     </section>
   </main>
   <footer id="mapa">
-    <div>
-      <ul class="mapa">
-        <h2>Mapa</h2>
-        <li><a href="../Pagina_1/home.html">Home</a></li>
-        <li><a href="..">Evolução</a></li>
-        <li><a href="../Pagina_2/pag_2PI/pag_2PI/evolucao.html">Circulação</a></li>
-        <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
-        <li><a href="../Pagina_5/evolucao.html">Costumes</a></li>
-        <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
-      </ul>
-      <ul class="redes">
-        <h2>Redes</h2>
-        <li><a href="https://www.instagram.com/tech_and_history?stkn=Y3F2dmEzdG81b2Vv">Instagram</a></li>
-        <li><a
-            href="https://github.com/vicenzoalvesifc-sudo/Com-rcioe-circula-o-de-tecnologia----Civiliza-es">Github</a>
-        </li>
-        <ul class="fontes">
-          <h2>Fontes</h2>
-          <li><a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/">HostGator</a>
+
+    <div class="rodape">
+      <div class="doubles">
+        <ul class="mapa">
+          <li>
+            <h2>Mapa</h2>
           </li>
-          <li><a href="https://e-safer.com.br/evolucao-da-tecnologia-durante-as-decadas/">e-Safer</a></li>
-          <li><a href="https://www.britannica.com/technology/technology">Encyclopaedia Britannica</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pagina_1/sobre.html">Sobre</a></li>
+          <li><a href="../Pagina_2/evolucao.html">Evolução</a></li>
+          <li><a href="../Pagina_3/circulacao.html">Circulação</a></li>
+          <li><a href="../Pagina_4/impactos.html">Impactos</a></li>
+          <li><a href="../Pagina_5/costumes.html">Costumes</a></li>
+          <li><a href="../Pagina_6/antiguidades.html">Antiguidades</a></li>
         </ul>
+        <ul class="redes">
+          <li>
+            <h2>Redes</h2>
+          </li>
+          <li><a href="https://www.instagram.com/tech_and_history?stkn=Y3F2dmEzdG81b2Vv"><img
+                src="../Pagina_6/src/logoInsta.png" alt="">Instagram</a></li>
+          <li><a href="https://github.com/vicenzoalvesifc-sudo/Com-rcioe-circula-o-de-tecnologia----Civiliza-es"><img
+                src="../Pagina_6/src/gitLogo.png" alt="">Github</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="fontes">
+        <li>
+          <h2>Fontes</h2>
+        </li>
+        <li><a href="https://www.hostgator.com.br/blog/impacto-da-tecnologia-no-comercio-eletronico/"><img
+              src="../Pagina_6/src/logoHostgator.png" alt="">HostGator</a></li>
+        <li><a href="https://e-safer.com.br/evolucao-da-tecnologia-durante-as-decadas/"><img
+              src="../Pagina_6/src/eSaferLogo.jpeg" alt="">e-Safer</a></li>
+        <li><a href="https://www.britannica.com/technology/technology"><img src="../Pagina_6/src/encBritLogo.jpeg"
+              alt="">Encyclopaedia Britannica</a></li>
+      </ul>
     </div>
     <p>
       <span>© 2026 Tech&History</span>. Desenvolvido por: Gabriel, Andrius, Matheus Mello,
-      Matheus Rafael, Vicenzo e Heitor
+      Matheus Rafael, Vicenzo e Heitor. Todos os direitos reservados
     </p>
   </footer>
+
 </body>
 
 </html>

@@ -1,23 +1,19 @@
 /* === IMPORTAÇÃO DE FONTES */
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
 /*
 Follow - font-family: "Fredoka", sans-serif;
 Medu - Oswald
 */
 /* ==========================*/
 
-/* ==== FORMATAÇÃO GERAL === */
+/*---------------Geral------------*/
 html {
   font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
   font-family: "Epilogue", sans-serif;
-  margin: 2vw 3vw;
-  color: white;
-  
-}
-body{
-  background-color: #121212;
+  scroll-behavior: smooth;
 }
 
 i {
@@ -26,28 +22,44 @@ i {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Fjalla One", sans-serif;
+}
+
+h2 {
+  font-weight: bold;
 }
 
 p {
   font-family: "Heebo", sans-serif;
+  text-align: center;
 }
 
-  /* HEADER */
+/* HEADER */
 
+/* HEADER */
 header {
+  background-color: #000000;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header img {
+header a img {
   height: 15vw;
+}
+
+header div.desktop {
+  display: none;
+}
+
+header div.mobile {
+  display: flex;
+  align-items: center;
+  gap: 45vw;
 }
 
 .menu {
@@ -63,14 +75,14 @@ header img {
   top: 0;
   left: 0;
   width: 175px;
-  height: 100%;
+  height: 120%;
   background-image: linear-gradient(to right, #000000, #1f1d3adc);
   padding-top: 60px;
   z-index: 10;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   font-size: 15px;
-  border-right: solid 2px rgb(2, 87, 59);
+  border-right: solid 2px #2f3e88;
   border-radius: 10px;
 }
 
@@ -120,93 +132,106 @@ header img {
 
 /* Header */
 
-  .banner{
-    text-align: center;
-  }
+.banner {
+  text-align: center;
+  background-color: rgb(8, 13, 24);
+  padding: 2vw 0;
+}
 
-  .banner h1{
-    font-size: 2rem;
-    margin: 5vw;
-    font-weight: bolder;
-  }
-  .banner h1 span.comercio{
-     text-decoration: underline #6200ee;
-  }
-  .banner h1 span.tecnologia{
-     text-decoration: underline #6200ee;
-  }
-  .banner p{
-    font-size: 0.8rem;
-    padding: 0 0 2vw 0;
-  }
+.banner h1 {
+  font-size: 2rem;
+  margin: 5vw;
+  font-weight: bolder;
+  color: white;
+}
 
-  .banner p.rodape{
-    padding: 7vw 0vw ;
-  }
+.banner h1 span.comercio {
+  text-decoration: underline #000080;
+}
 
-  .banner p a{
-    padding:  2vw 1.5vw;
-    border-radius: 10px;
-    background-color: #6200ee;
+.banner h1 span.tecnologia {
+  text-decoration: underline #000080;
+}
 
-  }
+.banner p {
+  font-size: 0.8rem;
+  padding: 0 0 2vw 0;
+  color: white;
+}
 
-  .aparelhos{
-      text-align: center;
-  }
+.banner p.rodape {
+  padding: 7vw 0vw;
+}
 
-  .aparelhos div h2{
-    font-size: 1.8rem;
-    font-weight: bolder;
-  }
-  .aparelhos div p{
-    font-size: 0.8rem;
-    padding: 3vw 0;
-  }
-  .aparelhos div span.hardware{
-     text-decoration: underline 3px #452e64;
-    font-weight: bold;
-    
-  }
-  .aparelhos div div h2 span.vender{
-     text-decoration: underline #6200ee;
-   
-  }
-  .aparelhos div div h2 span.aparelho{
-     text-decoration: underline #6200ee;
-    
-  }
+.banner p a {
+  padding: 2vw 1.5vw;
+  border-radius: 10px;
+  background-color: #000080;
 
-  .aparelhos ul li.box-red {
-  background: #190d30;
+}
+
+.aparelhos {
+  text-align: center;
+  background-color: #f0ede5;
+  padding: 2vw 0;
+}
+
+.aparelhos div h2 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.aparelhos div p {
+  font-size: 0.8rem;
+  padding: 3vw 0;
+}
+
+.aparelhos div span.hardware {
+  text-decoration: underline 3px #000080;
+  font-weight: bold;
+
+}
+
+.aparelhos div div h2 span.vender {
+  text-decoration: underline #000080;
+
+}
+
+.aparelhos div div h2 span.aparelho {
+  text-decoration: underline #000080;
+
+}
+
+.aparelhos ul li.box-red {
+  background: rgb(65, 93, 155);
   border-radius: 16px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 12px rgba(224, 219, 219, 0.897);
+  box-shadow: 0 4px 12px rgba(12, 12, 12, 0.897);
   padding: 10px;
   margin: 10px 8px;
   overflow: hidden;
 }
 
-.aparelhos ul li div.img-red{
+.aparelhos ul li div.img-red {
   width: 15%;
   height: 10%;
   display: flex;
   justify-content: space-between;
-  
-  
+
+
 }
 
- .aparelhos ul li.box-blue {
-  background: #190d30;
+.aparelhos ul li.box-blue {
+  background: rgb(65, 93, 155);
   border-radius: 16px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 12px rgba(224, 219, 219, 0.897);
+  box-shadow: 0 4px 12px rgba(12, 12, 12, 0.897);
   padding: 10px;
   margin: 10px 8px;
   overflow: hidden;
 }
 
-.aparelhos ul li div.img-blue{
+.aparelhos ul li div.img-blue {
   width: 15%;
   height: 10%;
   display: flex;
@@ -214,16 +239,16 @@ header img {
 }
 
 .aparelhos ul li.box-green {
-  background: #190d30;
+  background: rgb(65, 93, 155);
   border-radius: 16px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 12px rgba(224, 219, 219, 0.897);
+  box-shadow: 0 4px 12px rgba(12, 12, 12, 0.897);
   padding: 10px;
   margin: 10px 8px;
   overflow: hidden;
 }
 
-.aparelhos ul li div.img-green{
+.aparelhos ul li div.img-green {
   width: 15%;
   height: 10%;
   display: flex;
@@ -231,33 +256,36 @@ header img {
 }
 
 .aparelhos ul li.box-yellow {
-  background: #190d30;
+  background: rgb(65, 93, 155);
   border-radius: 16px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 4px 12px rgba(224, 219, 219, 0.897);
+  box-shadow: 0 4px 12px rgba(12, 12, 12, 0.897);
   padding: 10px;
   margin: 10px 8px;
   overflow: hidden;
 }
 
-.aparelhos ul li div.img-yellow{
+.aparelhos ul li div.img-yellow {
   width: 15%;
   height: 10%;
   display: flex;
   justify-content: space-between;
 }
 
-.aparelhos ul li h3{
+.aparelhos ul li h3 {
   color: rgb(247, 245, 245);
   font-weight: bolder;
   font-size: 1rem;
 }
-.aparelhos ul li p{
+
+.aparelhos ul li p {
   color: rgb(232, 229, 235);
 }
 
-.ideia{
+.ideia {
   padding: 6vw 0vw;
+  background-color: rgb(8, 13, 24);
+  padding: 2vw 0;
 }
 
 .ideia ol li {
@@ -279,7 +307,7 @@ header img {
   height: 32px;
   min-width: 32px;
   border-radius: 50%;
-  background: #4f46e5;
+  background: #000080;
   color: #fff;
   font-weight: 700;
   font-size: 0.8rem;
@@ -289,34 +317,40 @@ header img {
   font-size: 0.9rem;
   font-weight: bolder;
   color: #1f2937;
-   text-decoration: 2px underline #6200ee;
-}   
+  text-decoration: 2px underline #000080;
+}
+
 .ideia p {
   font-size: 0.7rem;
   color: #6b7280;
-} 
+}
 
-.ideia h2{
+.ideia h2 {
   font-size: 1.8rem;
   font-weight: bolder;
   padding: 0 0 5vw 0;
-}
-.ideia h2 span{
-   text-decoration: 3px underline #6200ee;
-}
-.circulacao h2{
-  font-size: 1.8rem;
-  font-weight: bolder;
-  text-align: center;  
+  color: white;
 }
 
-.circulacao h2 span.escala{
-   text-decoration: 3px underline #6200ee;
+.ideia h2 span {
+  text-decoration: 3px underline #000080;
 }
-.circulacao h2 span.planeta{
-   text-decoration: 3px underline #6200ee;
+
+.circulacao h2 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  text-align: center;
 }
-.circulacao p.circu{
+
+.circulacao h2 span.escala {
+  text-decoration: 3px underline #000080;
+}
+
+.circulacao h2 span.planeta {
+  text-decoration: 3px underline #000080;
+}
+
+.circulacao p.circu {
   font-size: 0.8rem;
   padding: 5vw 0;
   text-align: center;
@@ -329,7 +363,7 @@ header img {
 }
 
 .circulacao ul li {
-  background: #fff;
+  background: rgb(65, 93, 155);
   border-radius: 14px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
@@ -341,14 +375,19 @@ header img {
 .circulacao ul li h3 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #4f46e5;
+  color: white;
   margin: 0 0 6px;
 }
 
 .circulacao ul li p {
   font-size: 0.7rem;
-  color: #6b7280;
+  color: #050505;
   margin: 0;
+}
+
+.circulacao {
+  background-color: #f0ede5;
+  padding: 2vw 0;
 }
 
 /* ===== Seção "Por que isso importa?" ===== */
@@ -362,7 +401,7 @@ header img {
 }
 
 .importa h2 span {
-  color: #4f46e5;
+  color: #000080;
 }
 
 .importa ul li {
@@ -385,100 +424,212 @@ header img {
   font-size: 0.7rem;
   color: #6b7280;
   margin: 0;
-}   
+}
+
+.importa {
+  background-color: rgb(8, 13, 24);
+  padding: 2vw 0;
+}
+
+/*---------------------------FOOTER----------copie daqui-----------*/
+
+footer {
+  padding: 0 6vw 3vw 6vw;
+  border-top: solid 2px rgb(3, 102, 69);
+}
+
+footer div.doubles {
+  display: flex;
+  gap: 12vw;
+  padding-bottom: 30px;
+}
+
+footer div ul li {
+  margin-top: 20px;
+  align-items: center;
+}
+
+footer div ul.fontes li {
+  display: flex;
+  align-items: center;
+}
+
+footer div ul.redes li {
+  display: flex;
+  flex-direction: row;
+}
+
+footer div ul li img {
+  width: auto;
+  height: 25px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+footer div ul li a {
+  padding: 2px;
+}
+
+footer a:hover {
+  color: #000080;
+  border-bottom: #000080;
+}
+
+
+footer h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+
+}
+
+
+footer a:hover {
+  border-bottom: 2px solid white;
+  color: #f0ede5;
+}
+
+footer p {
+  padding: 20px 0;
+  font-size: 0.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 
 /* MEDIA QUERY - DESKTOP */
 @media screen and (min-width: 600px) {
 
-  html{
+  html {
     padding-top: 2vw;
   }
 
-  div.desktop {
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
+  header div.mobile {
+    display: none;
   }
+
+  header div.desktop {
+    display: block;
+  }
+
 
   header {
     display: flex;
-    background-color: #000000af;
+    background-color: #000000;
     font-size: 0.4rem;
-    padding: 1.2vw;
-    align-items: baseline;
-    justify-content: baseline;
+    padding: 0.5vw;
     position: fixed;
-    left: 17%;
-    border-radius: 4vw;
-    top: 1vw;
+    top: 0vw;
     z-index: 10;
+    width: 100%;
   }
 
-  header img {
+  header a img {
     height: 5vw;
-    padding-right: 4vw;
+    padding: 0vw 2vw;
   }
 
-  header button {
+  header li a {
+    font-weight: bold;
+  }
+
+  header li a:hover {
+    color: #3975a8;
+    border-bottom: #3975a8 2px solid;
+    font-weight: bold;
+
+  }
+
+
+  header a.quiz-button {
     background-color: #1f1d3a;
     padding: 1.2vw;
     border-radius: 2vw;
   }
 
-  header button:hover {
+  header a.quiz-button:hover {
     background: none;
-    border: solid 1px aquamarine;
+    border: solid 1px white;
     transition: ease 1s;
+  }
+
+  header div.desktop nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .desktop ul {
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
+    position: fixed;
+    right: 3vw;
   }
 
-  .desktop {
+  div.mobile {
+    display: none;
+  }
+
+  .aparelhos .lados li {
     display: flex;
-    gap: 3vw;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+  }
+  .aparelhos div.lados ul {
+   display: flex; 
+   margin: 0 200px 0 200px;
+  }
+  .aparelhos .lados ul li img {
+    width: auto;
+    height: 500%;
+  }
+  .ideia h3 {
+    padding: 20px 20px;
   }
 
-  .menu {
-    display: none;
+  .ideia ol li {
+    margin: 2vw;
   }
-  img.mobile {
-    display: none;
-  }  
 
- /* header */
- 
-  
-  .aparelhos div.lados {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}   
-
-.ideia h3{
-  padding: 20px 20px;
-}
-
-.ideia ol li{
-  margin: 2vw ;
-}
-
- p.rodape a:hover{
-  background: white;
-  color: #121212;
-  text-decoration: underline #6200ee;
-}
-
-
-.botao a:hover {
+  p.rodape a:hover {
     background: white;
-  color: #121212;
-  text-decoration: underline #6200ee;
-}
-  
+    color: #121212;
+    text-decoration: underline #000080;
+  }
 
+
+  .botao a:hover {
+    background: white;
+    color: #121212;
+    text-decoration: underline #000080;
+  }
+
+  div.rodape {
+    margin: 0 1.4vw 3vw 1.4vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.rodape a {
+    font-size: 0.6rem;
+  }
+
+  div.rodape a:hover {
+    color: #000080;
+    border-bottom: #000080 solid 2px;
+  }
+
+
+  footer p {
+    margin: 2vw 1.4vw;
+    font-size: 0.4rem;
+    text-align: center;
+    padding: 50px;
+  }
 
 
 }
